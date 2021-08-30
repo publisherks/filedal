@@ -1,0 +1,5 @@
+.contents .main-banner { position: relative; width: 100%; height: 230px; overflow: hidden; z-index: 1;}
+.contents .main-banner .btn-wrap { display: flex; position: absolute; right: 8px; bottom: 8px; width: 71px; height: 32px; border-radius: 50px; background: rgba(0, 0, 0, .8); z-index: 1;}
+.contents .main-banner .btn-wrap [class*="btn-"] { flex: 0 0 50%;}
+.contents .main-banner .btn-wrap .btn-next { background: url(../img/arrow-right-wh-s.png) no-repeat 35% center;}
+.contents .main-banner .btn-wrap .btn-prev { background: url(../img/arrow-left-wh-s.png) no-repeat 65% center;}
