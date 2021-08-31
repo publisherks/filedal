@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
-* { box-sizing: border-box;font-family: 'Open Sans', 'Noto Sans KR', sans-serif;letter-spacing: -0.025em;}
+* { box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;letter-spacing: -0.025em;}
 
 #wrap { background: #E3E3E3;}
 .inner { width: 1240px; margin: 0 auto;}
+.ft-os { font-family: 'Open Sans';}
 
 #header { width: 100%; height: 200px; background: #562BD1;}
 #header .top { display: flex; align-items: center; width: 100%; height: 60px; margin-bottom: 10px;}
@@ -62,7 +60,7 @@
 #container .aside .topsch-box .title { font-size: 22px;font-weight: 700; line-height: 32px; color: #00FFEE; margin-bottom: 20px;}
 #container .aside .topsch-box ul { counter-reset:list-number;}
 #container .aside .topsch-box ul li { counter-increment:list-number; display: flex; align-items: center; position: relative; padding-left: 40px; font-size: 16px; font-weight: 500; line-height: 30px; color: #FFFFFF;}
-#container .aside .topsch-box ul li::before { font-family: 'Open Sans', sans-serif; content:counter(list-number); display: flex; align-items: center; justify-content: center; position: absolute; left: 0; width: 21px; height: 21px; font-weight: 700; color: #c1acff; border-radius: 4px;}
+#container .aside .topsch-box ul li::before { font-family: 'Open Sans'; content:counter(list-number); display: flex; align-items: center; justify-content: center; position: absolute; left: 0; width: 21px; height: 21px; font-weight: 700; color: #c1acff; border-radius: 4px;}
 #container .aside .topsch-box ul li:nth-child(-n+3)::before { color: #562BD1; background: #00FFEE;}
 #container .aside .topsch-box ul li span { margin-left: auto; color: #C1ACFF;}
 #container .aside .topsch-box ul li span.stay { font-size: 16px; font-weight: 600; line-height: 30px; padding-right: 8px;}
@@ -107,7 +105,7 @@
 #footer .ft-menu li { display: flex; align-items: center;}
 #footer .ft-menu li a { font-size: 16px; line-height: 23px; color: #FFFFFF;}
 #footer .ft-menu li:not(:first-child)::before { content: ""; width: 1px; height: 15px; background: #666666; margin: 0 18px;}
-#footer address { font-size: 16px; line-height: 25px; color: #A8A8A8; margin-bottom: 5px;}
+#footer address { font-size: 16px; font-style: normal; line-height: 25px; color: #A8A8A8; margin-bottom: 5px;}
 #footer p.copy { font-size: 16px; line-height: 25px; color: #A8A8A8;}
 #footer p.rule { font-size: 14px; line-height: 25px; color: #D0D0D0; margin-top: 20px;}
 
@@ -137,18 +135,45 @@
 
 .contents-box .lists-box ul.lists { display: flex; flex-direction: column; border-top: 2px solid #333333; }
 .contents-box .lists-box ul.lists li { display: flex; align-items: center; height: 65px; border-bottom: 1px solid #D0D0D0;}
+.contents-box .lists-box ul.lists li .checkbox { display: none;}
 .contents-box .lists-box ul.lists li p.no { flex: 0 0 55px; font-size: 16px; font-weight: 700; line-height: 22px; text-align: center; color: #562BD1; margin-right: 9px;}
 .contents-box .lists-box ul.lists li .img { position: relative; flex: 0 0 45px; height: 45px; border-radius: 50%; overflow: hidden;}
 .contents-box .lists-box ul.lists li .img img { width: 100%; height: 100%;}
 .contents-box .lists-box ul.lists li .img .adult-box { position: absolute; top: 0; left: 0; display: none; width: 100%; height: 100%; background: url(../img/list-adult-text.png) no-repeat center rgba(86, 43, 209, .9);}
 .contents-box .lists-box ul.lists li .title { display: flex; align-items: center; width: calc(100% - 314px); font-size: 16px; font-weight: 500; color: #404040; margin-left: 15px;}
-.contents-box .lists-box ul.lists li .title .icon-adult { display: none; width: 19px; height: 19px; background: url(../img/adult-19.png) no-repeat center; margin-right: 6px;}
-.contents-box .lists-box ul.lists li .title .icon-new { width: 12px; height: 13px; background: url(../img/ic_title_new.png) no-repeat center; margin-left: 6px;}
+.contents-box .lists-box ul.lists li .title p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents-box .lists-box ul.lists li .title .icon-adult { display: none; width: 19px; height: 19px; vertical-align: middle; background: url(../img/adult-19.png) no-repeat center; margin-right: 6px;}
+.contents-box .lists-box ul.lists li .title .icon-new { display: inline-block; width: 12px; height: 13px; vertical-align: middle; background: url(../img/ic_title_new.png) no-repeat center; margin-left: 6px;}
 .contents-box .lists-box ul.lists li .size { flex: 0 0 100px; font-size: 14px; line-height: 19px; color: #666666; margin-left: auto; text-align: center;}
 .contents-box .lists-box ul.lists li .cate { flex: 0 0 86px; font-size: 14px; line-height: 19px; color: #666666; text-align: center;}
 
+.contents-box .lists-box.gallery-type ul.lists { flex-wrap: wrap; flex-direction: row;}
+.contents-box .lists-box.gallery-type ul.lists li { position: relative; flex-direction: column; border: none; width: calc((100% - 24px) / 4); height: auto; margin: 40px 8px 5px 0;}
+.contents-box .lists-box.gallery-type ul.lists li:nth-child(4n) { margin-right: 0;}
+.contents-box .lists-box.gallery-type ul.lists li .checkbox { display: block; position: absolute; top: 6px; right: 6px; z-index: 1;}
+.contents-box .lists-box.gallery-type ul.lists li .checkbox label { padding-left: 15px;}
+.contents-box .lists-box.gallery-type ul.lists li .checkbox label::before { width: 15px; height: 15px;}
+.contents-box .lists-box.gallery-type ul.lists li p.no { display: none;}
+.contents-box .lists-box.gallery-type ul.lists li .img { flex: 0 0 auto; width: 100%; height: 123px; border-radius: 5px;}
+.contents-box .lists-box.gallery-type ul.lists li .img .adult-box { background-image: url(../img/gallery-adult-text.png);}
+.contents-box .lists-box.gallery-type ul.lists li .title { width: 100%; margin: 15px 0 20px;}
+.contents-box .lists-box.gallery-type ul.lists li .title p { display:-webkit-box; white-space: inherit; -webkit-box-orient:vertical; word-wrap:break-word; -webkit-line-clamp:2;}
+.contents-box .lists-box.gallery-type ul.lists li .title .icon-new { display: none;}
+.contents-box .lists-box.gallery-type ul.lists li .size { flex: 0 0 auto; margin-left: 0; margin-right: auto;}
+.contents-box .lists-box.gallery-type ul.lists li .cate { display: none;}
+
 .contents-box .lists-box ul.lists li.adult .adult-box { display: block;}
-.contents-box .lists-box ul.lists li.adult .icon-adult { display: block;}
+.contents-box .lists-box ul.lists li.adult .icon-adult { display: inline-block;}
+
+/* btn */
+.btn-primary { background: #7348F0; color: #FFFFFF;}
+
+/* checkbox */
+.checkbox label { position: relative; display: block; font-size: 14px; line-height: 20px; color: #404040; padding-left: 30px; cursor: pointer;}
+.checkbox label::before { content: ""; position: absolute; top: 0; left: 0; display: block; width: 20px; height: 20px; background: url(../img/check.png) no-repeat center; background-size: 100%; border-radius: 3px;}
+.checkbox input[type="checkbox"] { display: none;}
+.checkbox input[type="checkbox"]:checked + label { color: #562BD1;}
+.checkbox input[type="checkbox"]:checked + label::before { background: url(../img/check-on.png) no-repeat center; background-size: 100%;}
 
 /* paging */
 .contents-box .paging-container { display: flex; justify-content: center; width: 100%;}
@@ -160,6 +185,52 @@
 .contents-box .paging-container .paging-box a.next { transform: rotate(180deg);}
 .contents-box .paging-container .paging-box a.prev:hover { transform: rotate(180deg);}
 .contents-box .paging-container .paging-box a.next:hover { transform: rotate(0);}
-.contents-box .paging-container .paging-box a { position: relative; font-size: 15px; line-height: 20px; color: #202020; margin: 0 10px;}
+.contents-box .paging-container .paging-box a { font-family: 'Open Sans'; position: relative; font-size: 15px; line-height: 20px; color: #202020; margin: 0 10px;}
 .contents-box .paging-container .paging-box a:hover { color: #562BD1;}
 .contents-box .paging-container .paging-box a.on:after { content: ""; position: absolute; top: 100%; left: 50%; display: block; width: 12px; height: 2px; background: #6F4DCF; transform: translateX(-50%);}
+
+
+/* modal */
+.blocker { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; overflow: auto; z-index: 1000; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); -webkit-transition: background-color .2s; transition: background-color .2s;}
+.blocker:before { content: ""; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.05em;}
+.blocker.behind { background-color: transparent;}
+.blocker.transparent { background-color: transparent;}
+.modal { display: none; vertical-align: middle; position: relative; background: #FFFFFF; border-radius: 20px; z-index: 1000;}
+.modal .close-btn { position: absolute; top: 15px; right: 15px;}
+.modal .modal-logo { text-align: center; margin: 0 auto 25px; padding: 60px 0 0;}
+.modal .modal-logo span { display: block; font-size: 15px; font-weight: 500; line-height: 22px; color: #562BD1; text-align: center; margin-top: 10px;}
+.modal .input-box { position: relative; width: 100%; height: 54px; border: 1px solid #D0D0D0; border-radius: 27px; overflow: hidden;}
+.modal .input-box input { width: 100%; height: 100%; padding: 0 30px; font-size: 16px; font-weight: 400; color: #333333; line-height: 23px; border: none; outline: none;}
+.modal .input-box input::placeholder { color: #A8A8A8;}
+.modal .input-box p.info { position: absolute; right: 30px; top: 50%; font-size: 16px; line-height: 23px; color: rgba(30, 195, 0, 1); transform: translateY(-50%);}
+.modal .input-box p.info.not { color: rgba(224, 46, 46, 1);}
+
+/* login modal */
+#loginModal { width: 555px;}
+#loginModal .login-box { padding: 0 35px 40px; text-align: center;}
+#loginModal .login-box .input-box { margin-bottom: 10px;}
+#loginModal .login-box [class*="btn-"] { width: 100%; height: 54px; font-size: 18px; font-weight: 700; border: none; border-radius: 27px; outline: none;}
+#loginModal .util { display: flex; align-items: center; margin-top: 15px; padding: 0 20px;}
+#loginModal .util .find-link { font-size: 14px; line-height: 20px; color: #404040; margin-left: auto;}
+#loginModal .dividing { display: block; width: 100%; height: 1px; background: #E3E3E3; margin: 33px 0 35px; border: none;}
+#loginModal .sns-info-text { font-size: 16px; line-height: 23px; color: #888888;}
+#loginModal .sns-link { display: flex; align-items: center; justify-content: center; margin: 27px 0 35px;}
+#loginModal .join-link { position: relative; font-size: 14px; font-weight: 700; line-height: 20px; color: #6435E9;}
+#loginModal .join-link::after { content: ""; position: absolute; top: calc(100% + 4px); left: 0; display: block; width: 100%; height: 1px; background: #7348F0;}
+
+/* join modal */
+#joinModal { width: 685px;}
+#joinModal .join-box { padding: 0 60px 0;}
+#joinModal .join-box .input-box { margin-bottom: 10px;}
+#joinModal .join-box [class*="btn-"] { width: 100%; height: 54px; font-size: 18px; font-weight: 700; border: none; border-radius: 27px; outline: none;}
+#joinModal .join-box .sns-box { display: flex; margin: 30px 0;}
+#joinModal .join-box .sns-box p { font-size: 14px; line-height: 20px; color: #A8A8A8; text-align: left;}
+#joinModal .join-box .sns-box p strong { display: block; font-size: 18px; font-weight: 500; line-height: 26px; color: #333333; margin-bottom: 5px;}
+#joinModal .join-box .sns-box .sns-link { margin-left: auto;;}
+#joinModal .join-box .sns-box .sns-link a { margin-left: 14px;}
+#joinModal .join-agree-box { background: #F5F5F5; padding: 25px 60px 35px;}
+#joinModal .join-agree-box #agreeAll + label { font-weight: 500; color: #333333;}
+#joinModal .join-agree-box .agree-boxs { display: flex; justify-content: space-between; margin-top: 14px;}
+#joinModal .join-agree-box .agree-boxs .agree { width: calc(50% - 7px);}
+#joinModal .join-agree-box .agree-boxs .agree textarea { width: 100%; height: 80px; font-size: 12px; line-height: 17px; color: #888888; border: 1px solid #E3E3E3; border-radius: 4px; margin-bottom: 15px; padding: 13px 15px; outline: none; resize: none;}
+

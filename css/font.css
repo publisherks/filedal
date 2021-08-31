@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../font/NotoSansKR-Thin.woff2) format('woff2'),
+        url(../font/NotoSansKR-Thin.woff) format('woff'),
+        url(../font/NotoSansKR-Thin.otf) format('opentype'),
+        url(../font/NotoSansKR-Thin.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NotoSansKR-Light.woff2) format('woff2'),
+        url(../font/NotoSansKR-Light.woff) format('woff'),
+        url(../font/NotoSansKR-Light.otf) format('opentype'),
+        url(../font/NotoSansKR-Light.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+        url(../font/NotoSansKR-Regular.woff) format('woff'),
+        url(../font/NotoSansKR-Regular.otf) format('opentype'),
+        url(../font/NotoSansKR-Regular.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/NotoSansKR-Medium.woff2) format('woff2'),
+        url(../font/NotoSansKR-Medium.woff) format('woff'),
+        url(../font/NotoSansKR-Medium.otf) format('opentype'),
+        url(../font/NotoSansKR-Medium.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NotoSansKR-Bold.woff2) format('woff2'),
+        url(../font/NotoSansKR-Bold.woff) format('woff'),
+        url(../font/NotoSansKR-Bold.otf) format('opentype'),
+        url(../font/NotoSansKR-Bold.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../font/NotoSansKR-Black.woff2) format('woff2'),
+        url(../font/NotoSansKR-Black.woff) format('woff'),
+        url(../font/NotoSansKR-Black.otf) format('opentype'),
+        url(../font/NotoSansKR-Black.ttf) format('truetype');
+    unicode-range: U+AC00-U+D7A3;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/OpenSans-Light.woff2) format('woff2'),
+        url(../font/OpenSans-Light.woff) format('woff'),
+        url(../font/OpenSans-Light.otf) format('opentype'),
+        url(../font/OpenSans-Light.ttf) format('truetype');
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/OpenSans-Regular.woff2) format('woff2'),
+        url(../font/OpenSans-Regular.woff) format('woff'),
+        url(../font/OpenSans-Regular.otf) format('opentype'),
+        url(../font/OpenSans-Regular.ttf) format('truetype');
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../font/OpenSans-SemiBold.woff2) format('woff2'),
+        url(../font/OpenSans-SemiBold.woff) format('woff'),
+        url(../font/OpenSans-SemiBold.otf) format('opentype'),
+        url(../font/OpenSans-SemiBold.ttf) format('truetype');
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/OpenSans-Bold.woff2) format('woff2'),
+        url(../font/OpenSans-Bold.woff) format('woff'),
+        url(../font/OpenSans-Bold.otf) format('opentype'),
+        url(../font/OpenSans-Bold.ttf) format('truetype');
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../font/OpenSans-ExtraBold.woff2) format('woff2'),
+        url(../font/OpenSans-ExtraBold.woff) format('woff'),
+        url(../font/OpenSans-ExtraBold.otf) format('opentype'),
+        url(../font/OpenSans-ExtraBold.ttf) format('truetype');
+    unicode-range: U+0030-0039;
+}

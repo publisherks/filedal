@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/front.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/modal.js"></script>
     <title>Filedal</title>
 </head>
 <body>
@@ -62,11 +64,12 @@
                     </div>
                     <div class="mb-box">
                         <!-- 로그인 전 -->
-                        <!-- <div class="mb-menu">
-                            <a href="#">로그인</a>
-                            <a href="#">회원가입</a>
-                        </div> -->
-                        <div class="mb-info">
+                        <div class="mb-menu">
+                            <a href="#n" rel="modal:open" data-modal="#loginModal">로그인</a>
+                            <a href="#n" rel="modal:open" data-modal="#joinModal">회원가입</a>
+                        </div>
+                        <!-- 로그인 후 -->
+                        <!-- <div class="mb-info">
                             <div class="mb mb-8">
                                 <p><strong>hawkiori님 환영합니다.</strong></p>
                                 <a href="#" class="ml-10">로그아웃</a>
@@ -75,7 +78,7 @@
                                 <p>포인트 : <strong>0</strong></p>
                                 <p class="ml-25">정액제 : <strong>0</strong></p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <nav id="nav">
@@ -381,9 +384,9 @@
                                     </label>
                                 </div>
                                 <div class="type-check ml-10">
-                                    <input type="radio" name="listType" id="listType" value="listType" >
+                                    <input type="radio" name="listType" id="listType" value="listType" checked>
                                     <label for="listType" class="list"></label>
-                                    <input type="radio" name="listType" id="galleryType" value="galleryType" checked>
+                                    <input type="radio" name="listType" id="galleryType" value="galleryType">
                                     <label for="galleryType" class="gallery ml-5"></label>
                                 </div>
                                 <a href="#" class="upload-btn ml-10">컨텐츠 업로드</a>
@@ -406,142 +409,222 @@
                         <article class="lists-box">
                             <ul class="lists">
                                 <li>
-                                    <p class="no">1</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item1">
+                                        <label for="item1"></label>
+                                    </div>
+                                    <p class="no ft-os">1</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT [한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">2</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item2">
+                                        <label for="item2"></label>
+                                    </div>
+                                    <p class="no ft-os">2</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">3</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item3">
+                                        <label for="item3"></label>
+                                    </div>
+                                    <p class="no ft-os">3</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[번역] 전 최강 검사는 이세계 마법을 동경한다 1~33</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[번역] 전 최강 검사는 이세계 마법을 동경한다 1~33<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li class="adult">
-                                    <p class="no">4</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item4">
+                                        <label for="item4"></label>
+                                    </div>
+                                    <p class="no ft-os">4</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[ 닥 터 슬 립 ] 초 현 실 능 력 자 들 스릴러 자체자막</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[ 닥 터 슬 립 ] 초 현 실 능 력 자 들 스릴러 자체자막<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">5</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item5">
+                                        <label for="item5"></label>
+                                    </div>
+                                    <p class="no ft-os">5</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">6</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item6">
+                                        <label for="item6"></label>
+                                    </div>
+                                    <p class="no ft-os">6</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis"> [7월] 어벤져스의 운명을 바꾼 블랙위도우. 1080p 완벽자막</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i> [7월] 어벤져스의 운명을 바꾼 블랙위도우. 1080p 완벽자막<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li class="adult">
-                                    <p class="no">7</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item7">
+                                        <label for="item7"></label>
+                                    </div>
+                                    <p class="no ft-os">7</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">순간의 선택 골든타임.E25.210723.720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>순간의 선택 골든타임.E25.210723.720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">8</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item8">
+                                        <label for="item8"></label>
+                                    </div>
+                                    <p class="no ft-os">8</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis"> [괴기맨숀] 성.준X김.보.라.FHD.1080p</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i> [괴기맨숀] 성.준X김.보.라.FHD.1080p<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">9</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item9">
+                                        <label for="item9"></label>
+                                    </div>
+                                    <p class="no ft-os">9</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">10</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item10">
+                                        <label for="item10"></label>
+                                    </div>
+                                    <p class="no ft-os">10</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">11</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item11">
+                                        <label for="item11"></label>
+                                    </div>
+                                    <p class="no ft-os">11</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis"> [7월] 어벤져스의 운명을 바꾼 블랙위도우. 1080p 완벽자막</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i> [7월] 어벤져스의 운명을 바꾼 블랙위도우. 1080p 완벽자막<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">12</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item12">
+                                        <label for="item12"></label>
+                                    </div>
+                                    <p class="no ft-os">12</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">13</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item13">
+                                        <label for="item13"></label>
+                                    </div>
+                                    <p class="no ft-os">13</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li class="adult">
-                                    <p class="no">14</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item14">
+                                        <label for="item14"></label>
+                                    </div>
+                                    <p class="no ft-os">14</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">식객 허영만의 백반기행.E113.210723.720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>식객 허영만의 백반기행.E113.210723.720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">15</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item15">
+                                        <label for="item15"></label>
+                                    </div>
+                                    <p class="no ft-os">15</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">순간의 선택 골든타임.E25.210723.720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>순간의 선택 골든타임.E25.210723.720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">16</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item16">
+                                        <label for="item16"></label>
+                                    </div>
+                                    <p class="no ft-os">16</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">17</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item17">
+                                        <label for="item17"></label>
+                                    </div>
+                                    <p class="no ft-os">17</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">18</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item18">
+                                        <label for="item18"></label>
+                                    </div>
+                                    <p class="no ft-os">18</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">식객 허영만의 백반기행.E113.210723.720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>식객 허영만의 백반기행.E113.210723.720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li class="adult">
-                                    <p class="no">19</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item19">
+                                        <label for="item19"></label>
+                                    </div>
+                                    <p class="no ft-os">19</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
                                 <li>
-                                    <p class="no">20</p>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" id="item20">
+                                        <label for="item20"></label>
+                                    </div>
+                                    <p class="no ft-os">20</p>
                                     <a href="#" class="img"><div class="adult-box"></div><img src="img/sample-img.png" alt=""></a>
-                                    <a href="#" class="title ellipsis"><i class="icon-adult"></i><p class="ellipsis">순간의 선택 골든타임.E25.210723.720p-NEXT</p><i class="icon-new"></i></a>
+                                    <a href="#" class="title"><p><i class="icon-adult"></i>순간의 선택 골든타임.E25.210723.720p-NEXT<i class="icon-new"></i></p></a>
                                     <p class="size">4.2 GM</p>
                                     <p class="cate">영화</p>
                                 </li>
@@ -621,6 +704,121 @@
                 <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
             </div>
         </footer>
+    </div>
+    <div id="loginModal" class="modal">
+        <a href="#" rel="modal:close" class="close-btn"><img src="img/pop_close.png" alt=""></a>
+        <h3 class="modal-logo">
+            <img src="img/modal-logo.png" alt="FILEDAL">
+            <span>파일달 로그인</span>
+        </h3>
+        <form action="">
+            <div class="login-box">
+                <div class="input-box">
+                    <input type="text" placeholder="아이디를 입력해주세요. (영문,숫자 조합 4~20자)">
+                    <!-- <p class="info not">사용불가</p> -->
+                    <!-- <p class="info">사용가능</p> -->
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input" placeholder="패스워드를 입력해주세요. (영문,숫자 조합 4~20자)">
+                </div>
+                <button type="submit" class="btn-primary">로그인</button>
+                <div class="util">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="loginSave">
+                        <label for="loginSave">로그인 유지</label>
+                    </div>
+                    <a href="#n" rel="modal:open" data-modal="#findModal" class="find-link">아이디/비밀번호 찾기</a>
+                </div>
+                <hr class="dividing"/>
+                <p class="sns-info-text">애플, 카카오톡, 네이버 계정으로도 서비스 이용이 가능합니다.</p>
+                <div class="sns-link">
+                    <a href="#"><img src="img/naver.png" alt="네이버"></a>
+                    <a href="#" class="ml-20 mr-20"><img src="img/kakao.png" alt="카카오"></a>
+                    <a href="#"><img src="img/apple.png" alt="애플"></a>
+                </div>
+                <a href="#" rel="modal:open" data-modal="#findModal" class="join-link">파일달 무료 회원 가입</a>
+            </div>
+        </form>
+    </div>
+    <div id="joinModal" class="modal">
+        <div class="modal-con">
+            <h3 class="modal-logo">
+                <img src="img/modal-logo.png" alt="FILEDAL">
+                <span>모든 파일들이 모인 곳! 파일달에서 오늘도 재밋는 하루 보내세요:)</span>
+            </h3>
+            <form action="">
+                <div class="join-box">
+                    <div class="input-box">
+                        <input type="text" placeholder="아이디를 입력해주세요. (영문,숫자 조합 4~20자)">
+                        <!-- <p class="info not">사용불가</p> -->
+                        <p class="info">사용가능</p>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input" placeholder="패스워드를 입력해주세요. (영문,숫자 조합 4~20자)">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input" placeholder="패스워드 확인">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input" placeholder="닉네임을 입력해주세요">
+                    </div>
+                    <button type="submit" class="btn-primary">회원 가입 완료</button>
+                    <div class="sns-box">
+                        <p>
+                            <strong>SNS 회원 가입</strong>
+                            아래의 SNS계정으로도 서비스 이용이 가능합니다.
+                        </p>
+                        <div class="sns-link">
+                            <a href="#"><img src="img/s_naver.png" alt="네이버"></a>
+                            <a href="#"><img src="img/s_kakao.png" alt="카카오"></a>
+                            <a href="#"><img src="img/s_apple.png" alt="애플"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="join-agree-box">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="agreeAll">
+                        <label for="agreeAll">아래 이용약관 / 개인정보 수집 및 이용에 동의합니다.</label>
+                    </div>
+                    <div class="agree-boxs">
+                        <div class="agree">
+                            <textarea name="" id="" readonly>
+서비스 이용약관
+
+제 1 장 총 칙
+
+제 1 조 (목적)
+                            </textarea>
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="agreeService">
+                                <label for="agreeService">서비스 이용약관 동의</label>
+                            </div>
+                        </div>
+                        <div class="agree">
+                            <textarea name="" id="" readonly>
+개인정보 수집 및 이용
+
+제1조 수집하는 개인 정보 항목
+
+1. 파일달은 이용자들이 파일달에서 운영하는
+                            </textarea>
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="agreePrivacy">
+                                <label for="agreePrivacy">개인정보 수집 및 이용 동의</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="findModal" class="modal">
+        <div class="modal-con">
+            <h3 class="modal-logo">
+                <img src="img/modal-logo.png" alt="FILEDAL">
+                <span>모든 파일들이 모인 곳! 파일달에서 오늘도 재밋는 하루 보내세요:)</span>
+            </h3>
+        </div>
     </div>
 </body>
 </html>

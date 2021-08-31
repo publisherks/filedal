@@ -1,3 +1,23 @@
+$(document).ready(function () {
+    nav();
+    select();
+    listTypeChange();
+    modal('a[data-modal]');
+});
+
+function modal (target) {
+    $(target).on('click', function () {
+        let commonOption = {
+            fadeDuration: 200,
+            fadeDelay: .5,
+            closeText: '',
+        }
+
+        $($(this).data('modal')).modal(commonOption);
+        return false;
+    });
+}
+
 function nav () {
     const NAV     = $("#nav");
     const MAINNAV = $("#mainNav");
@@ -74,9 +94,3 @@ function listTypeChange () {
     })
     
 }
-
-$(document).ready(function () {
-    nav();
-    select();
-    listTypeChange();
-});
