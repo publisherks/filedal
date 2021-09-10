@@ -177,6 +177,26 @@
 .checkbox input[type="checkbox"]:checked + label { color: #562BD1;}
 .checkbox input[type="checkbox"]:checked + label::before { background: url(../img/check-on.png) no-repeat center; background-size: 100%;}
 
+/* tab-manu */
+.contents-box .tab-menu ul { display: flex; align-items: center; position: relative; z-index: 1;}
+.contents-box .tab-menu ul::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; border-bottom: 2px solid #562BD1;}
+.contents-box .tab-menu ul li a { display: flex; align-items: center; justify-content: center; position: relative; height: 60px; background: #F5F5F5; border: 1px solid #F5F5F5; border-bottom: none; border-radius: 8px 8px 0 0; font-size: 16px; font-weight: 700; line-height: 22px; color: #888888; cursor: pointer;}
+.contents-box .tab-menu ul li:not(:first-child) { margin-left: 2px;}
+.contents-box .tab-menu ul li a.on { color: #562BD1; background: #FFFFFF; border: 2px solid #562BD1; border-bottom-color: #FFFFFF; z-index: 1;}
+
+.contents-box [data-tabMenu] { display: none;}
+.contents-box [data-tabMenu].on { display: block;}
+
+/* list-table */
+.list-table .btn-group { display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px;}
+.list-table .btn-group button { font-size: 14px; text-align: center; color: #404040; margin-left: 5px; padding: 8px 12px; background: transparent; border: 1px solid #D0D0D0; border-radius: 2px; outline: none;}
+.list-table table { width: 100%;}
+.list-table table th { height: 50px; font-size: 16px; text-align: center; color: #666666; border-top: 1px solid #D0D0D0; border-bottom: 1px solid #D0D0D0; vertical-align: middle;}
+.list-table table td { border-bottom: 1px solid #D0D0D0; vertical-align: middle;}
+.list-table table td.empty { height: 177px; font-size: 16px; font-weight: 500; line-height: 23px; color: #A8A8A8; text-align: center; background: #F5F5F5;}
+.list-table table .checkbox { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
+.list-table table .checkbox label { width: 20px; height: 20px;}
+
 /* paging */
 .contents-box .paging-container { display: flex; justify-content: center; width: 100%;}
 .contents-box .paging-container .paging-box { display: flex; align-items: center;}
@@ -190,7 +210,6 @@
 .contents-box .paging-container .paging-box a { font-family: 'Open Sans'; position: relative; font-size: 15px; line-height: 20px; color: #202020; margin: 0 10px;}
 .contents-box .paging-container .paging-box a:hover { color: #562BD1;}
 .contents-box .paging-container .paging-box a.on:after { content: ""; position: absolute; top: 100%; left: 50%; display: block; width: 12px; height: 2px; background: #6F4DCF; transform: translateX(-50%);}
-
 
 /* modal */
 .blocker { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; overflow: auto; z-index: 1000; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); -webkit-transition: background-color .2s; transition: background-color .2s;}

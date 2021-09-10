@@ -1,0 +1,125 @@
+
+
+/* 이벤트 */
+.event .tab-menu ul li { width: calc(50% - 1px);}
+.event .tab-menu ul li a { height: 60px;}
+.event .event-list { display: flex; flex-wrap: wrap; padding-top: 40px;}
+.event .event-list li { width: calc((100% - 25px) / 2);}
+.event .event-list li:nth-child(even) { margin-left: 25px;}
+.event .event-list li:not(:nth-child(-n+2)) { margin-top: 50px;}
+.event .event-list li .img { width: 100%; height: 180px; margin-bottom: 20px;}
+.event .event-list li .img img { width: 100%; height: 100%;}
+.event .event-list li .tit { font-size: 18px; font-weight: 700; line-height: 26px; color: #202020; margin-bottom: 10px;}
+.event .event-list li .period,
+.event .event-list li .con { display: flex; align-items: center; font-size: 16px; line-height: 28px; color: #404040;}
+.event .event-list li .period span,
+.event .event-list li .con span { color: #562BD1; margin-right: 10px;}
+.event .tab-contents .no-data { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 200px 0 290px;}
+.event .tab-contents .no-data p { font-size: 18px; line-height: 26px; color: #A8A8A8; margin-top: 30px;}
+
+
+/* 고객센터 */
+.customer .tab-menu ul li { width: calc((100% - 6px) / 3);}
+.customer .tab-menu ul li a { height: 60px;}
+.customer .tab-contents#faq { padding-top: 50px;}
+.customer .tab-contents#notice,
+.customer .tab-contents#inquiry { padding-top: 40px;}
+.customer .tab-contents h3.title { font-size: 20px; font-weight: 700; line-height: 29px; color: #202020;}
+.customer .tab-contents#faq h3.title { text-align: center; margin-bottom: 25px;}
+.customer .tab-contents#notice h3.title { margin-bottom: 20px;}
+.customer .tab-contents#inquiry h3.title { margin-bottom: 10px;}
+.customer .tab-contents .sch-box { position:relative; width: 564px; height: 50px; border: 2px solid #F5F5F5; border-radius: 40px; margin: 0 auto 40px;}
+.customer .tab-contents .sch-box input { width: 100%; height: 100%; font-size: 16px; font-weight: 500; line-height: 23px; color: #333333; padding-left: 30px; background-color: transparent; border: none; outline: none;}
+.customer .tab-contents .sch-box input::placeholder { font-weight: 400; color: #A8A8A8;}
+.customer .tab-contents .sch-box .sch-btn { position: absolute; top: 50%; right: 25px; width: 30px; height: 30px; background: url(../img/search-wh.png) no-repeat center; transform: translateY(-50%); border: none; outline: none;}
+.customer .tab-contents .list-cate { display: flex; align-items: center; margin-bottom: 40px;}
+.customer .tab-contents .list-cate li { display: flex; align-items: center;}
+.customer .tab-contents .list-cate li:not(:last-child):after { content: ""; display: block; width: 6px; height: 6px; background: #E3E3E3; border-radius: 50%; margin: 0 20px;}
+.customer .tab-contents .list-cate li a { position: relative; font-size: 16px; line-height: 23px; color: #666666; padding: 0 5px;}
+.customer .tab-contents .list-cate li a.on { font-weight: 500; color: #333333;}
+.customer .tab-contents .list-cate li a.on:after { content: ""; display: block; position: absolute; top: calc(100% + 6px); left: 0; width: 100%; height: 4px; background: #333333;}
+
+
+.accordion-list { border-top: 1px solid #D0D0D0;}
+.accordion-list .accordion-item { border-bottom: 1px solid #D0D0D0;}
+.accordion-list .accordion-contents { display: flex; align-items: flex-start; background: #F5F5F5; border-top: 1px solid #D0D0D0;}
+.accordion-list .accordion-contents p { font-size: 16px; line-height: 24px; color: #666666;}
+.accordion-list .accordion-btn { display: flex; align-items: center; cursor: pointer;}
+.accordion-list .accordion-btn .title { display: flex; align-items: center; font-size: 16px; color: #333333;}
+.accordion-list .accordion-btn .title p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.accordion-list .accordion-contents { display: none;}
+.accordion-list .accordion-item.no-data .accordion-btn { cursor: default !important;}
+.accordion-list .accordion-item.no-data .title { width: 100% !important; font-weight: 400 !important;}
+
+.customer #faq .accordion-list .accordion-btn { height: 71px;}
+.customer #faq .accordion-list .accordion-btn p.type { flex: 0 0 135px; text-align: center; font-size: 16px; line-height: 23px; color: #888888;}
+.customer #faq .accordion-list .accordion-btn .title { display: flex; align-items: center; width: calc(100% - 203px); font-weight: 500;}
+.customer #faq .accordion-list .accordion-btn .title i { font-weight: 700; color: #00C2B6; margin-right: 8px;}
+.customer #faq .accordion-list .accordion-btn .accordion-icon { position: relative; flex: 0 0 18px; height: 18px; margin-left: auto; margin-right: 25px;}
+.customer #faq .accordion-list .accordion-btn .accordion-icon .hotizontal,
+.customer #faq .accordion-list .accordion-btn .accordion-icon .vertical { transition: all .25s ease-in-out; transform: rotate(-90deg);}
+.customer #faq .accordion-list .accordion-btn .accordion-icon .hotizontal { position: absolute; top: 50%; left: 50%; margin-left: -9px; margin-top: -1px; width: 18px; height: 2px; background: #D0D0D0;}
+.customer #faq .accordion-list .accordion-btn .accordion-icon .vertical { position: absolute; top: 50%; left: 50%; margin-left: -1px; margin-top: -9px; width: 2px; height: 18px; background: #D0D0D0;}
+.customer #faq .accordion-list .accordion-contents { padding: 30px 60px 45px 135px;}
+.customer #faq .accordion-list .accordion-contents i { font-weight: 700; color: #FF3D6B; margin-right: 9px;}
+.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal,
+.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
+.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
+
+.customer #notice .accordion-list .accordion-btn { height: 60px;}
+.customer #notice .accordion-list .accordion-btn p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888; margin-right: 5px;}
+.customer #notice .accordion-list .accordion-btn p.title { width: calc(100% - 215px);}
+.customer #notice .accordion-list .accordion-item.noti .title { font-weight: 500;}
+.customer #notice .accordion-list .accordion-btn p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto;}
+.customer #notice .accordion-list .accordion-contents { padding: 30px 60px 45px 80px;}
+
+.customer #inquiry .info-text { font-size: 16px; line-height: 23px; color: #666666; margin-bottom: 30px;}
+.customer #inquiry .accordion-list .th { display: flex; align-items: center; height: 50px; padding-right: 20px;}
+.customer #inquiry .accordion-list .th p { font-size: 16px; font-weight: 500; line-height: 23px; color: #666666; text-align: center;}
+.customer #inquiry .accordion-list .accordion-btn { height: 60px; padding-right: 20px;}
+.customer #inquiry .accordion-list p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888;}
+.customer #inquiry .accordion-list p.type { flex: 0 0 150px; text-align: center; font-size: 14px; line-height: 19px; color: #666666;}
+.customer #inquiry .accordion-list .title { width: calc(100% - 417px);}
+.customer #inquiry .accordion-list p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto}
+.customer #inquiry .accordion-list .state { flex: 0 0 72px;}
+.customer #inquiry .accordion-list .state span { display: flex; align-items: center; justify-content: center; width: 72px; height: 32px; font-size: 14px; line-height: 20px; color: #666666; border-radius: 4px; background: #E3E3E3;}
+.customer #inquiry .accordion-list .state.cmp span { color: #FFFFFF; background: #00C2B6;}
+
+/* 마이페이지 */
+.mypage .my-info-box { display: flex; flex-wrap: wrap;  padding: 40px 40px 35px; border: 1px solid #E3E3E3; margin-bottom: 50px;}
+.mypage .my-info-box .info { display: flex; flex: 0 0 100%; margin-bottom: 30px;}
+.mypage .my-info-box .info .mb-info { margin-right: auto;}
+.mypage .my-info-box .info .mb-info strong { font-size: 22px; font-weight: 700; line-height: 32px; color: #333333; margin-bottom: 6px;}
+.mypage .my-info-box .info .mb-info strong span { color: #562BD1;}
+.mypage .my-info-box .info .mb-info p { font-size: 16px; line-height: 23px; color: #666666; margin-bottom: 15px;}
+.mypage .my-info-box .info .mb-info a { font-size: 14px; line-height: 20px; text-decoration: underline; color: #ABABAB;}
+.mypage .my-info-box .info .state { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 30px;}
+.mypage .my-info-box .info .state:last-child { margin-right: 40px;}
+.mypage .my-info-box .info .state span { font-size: 15px; line-height: 22px; color: #888888; margin-bottom: 5px;}
+.mypage .my-info-box .info .state p { font-size: 18px; font-weight: 500; line-height: 26px; color: #333333; margin-bottom: 12px;}
+.mypage .my-info-box .info .state a { font-size: 14px; line-height: 20px; color: #562BD1; padding: 4px 12px; border: 1px solid #562BD1; border-radius: 28px;}
+.mypage .my-info-box .point,
+.mypage .my-info-box .pass { display: flex; flex-direction: column; flex: 0 0 calc((100% - 20px) / 2); height: 167px; padding-top: 20px; background: #F5F5F5; border-radius: 12px; overflow: hidden;}
+.mypage .my-info-box .pass { margin-left: 20px;}
+.mypage .my-info-box .point p,
+.mypage .my-info-box .pass p { display: flex; align-items: center; font-size: 16px; line-height: 30px; color: #404040; padding: 0 30px;}
+.mypage .my-info-box .point p strong,
+.mypage .my-info-box .pass p strong { font-size: 20px; font-weight: 600; line-height: 30px; color: #202020; margin-left: auto;}
+.mypage .my-info-box .point p strong span,
+.mypage .my-info-box .pass p strong span { font-size: 16px; font-weight: 400; line-height: 30px; margin-left: 6px;}
+.mypage .my-info-box .point a,
+.mypage .my-info-box .pass a { display: flex; align-items: center; justify-content: center; width: 100%; height: 40px; font-size: 16px; font-weight: 700; color: #FFFFFF; margin-top: auto;}
+.mypage .my-info-box .point a { background: #562BD1;}
+.mypage .my-info-box .pass a { background: #333333;}
+.mypage .tab-menu ul li { width: calc((100% - 8px) / 5);}
+.mypage .tab-contents { padding-top: 30px;}
+.mypage .sub-tab { display: flex; align-items: center; margin-bottom: 30px;}
+.mypage .sub-tab li a { display: flex; align-items: center; justify-content: center; width: 160px; height: 45px; font-size: 16px; font-weight: 400; color: #404040; border: 1px solid #D0D0D0; border-radius: 30px;}
+.mypage .sub-tab li a.on { color: #FFFFFF; background: #404040; border-color: #404040;}
+.mypage .sub-tab li { margin-right: 10px;}
+.mypage .sub-tab-con { display: none;}
+.mypage .sub-tab-con.on { display: block;}
+.mypage .sub-tab-con h3 { font-size: 22px; font-weight: 700; line-height: 32px; color: #333333; margin-bottom: 24px;}
+.mypage .sub-tab-con .guide-box { width: 100%; padding: 30px; background: #F5F5F5; border-radius: 12px; margin-bottom: 40px;}
+.mypage .sub-tab-con .guide-box li { display: grid; grid-template-columns: 0 1fr; grid-gap: 12px; align-items: start; font-size: 15px; font-weight: 400; line-height: 30px; color: #666666; word-break: keep-all;}
+.mypage .sub-tab-con .guide-box li::before { content: attr(data-icon);}

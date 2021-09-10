@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <script src="../js/modal.js"></script>
+    <title>Filedal - 고객센터</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <div class="inner">
+                <div class="top">
+                    <ul>
+                        <li>
+                            <a href="#">충전샵</a>
+                        </li>
+                        <li>
+                            <a href="../html/event.html">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="../html/mypage.html">내정보</a>
+                        </li>
+                        <li>
+                            <a href="../html/customer.html">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">출석체크</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <h1 id="logo">
+                        <a href="/">
+                            <img src="../img/logo.png" alt="FILEDAL">
+                        </a>
+                    </h1>
+                    <div class="sch-box">
+                        <form action="">
+                            <div class="select-box">
+                                <p class="select-text">전체</p>
+                                <ul>
+                                    <li data-option="전체">전체</li>
+                                    <li data-option="영화">영화</li>
+                                    <li data-option="드라마">드라마</li>
+                                    <li data-option="동영상">동영상</li>
+                                    <li data-option="게임">게임</li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <button type="button" class="sch-btn"></button>
+                        </form>
+                    </div>
+                    <div class="mb-box">
+                        <!-- 로그인 전 -->
+                        <div class="mb-menu">
+                            <a href="#n" rel="modal:open" data-modal="#loginModal">로그인</a>
+                            <a href="#n" rel="modal:open" data-modal="#joinModal">회원가입</a>
+                        </div>
+                        <!-- 로그인 후 -->
+                        <!-- <div class="mb-info">
+                            <div class="mb mb-8">
+                                <p><strong>hawkiori님 환영합니다.</strong></p>
+                                <a href="#" class="ml-10">로그아웃</a>
+                            </div>
+                            <div class="info">
+                                <p>포인트 : <strong>0</strong></p>
+                                <p class="ml-25">정액제 : <strong>0</strong></p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <nav id="nav">
+                    <ul id="mainNav">
+                        <li>
+                            <a href="#">
+                                인기
+                                <img src="../img/nav-icon-star.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">영화</a>
+                        </li>
+                        <li>
+                            <a href="#">드라마</a>
+                        </li>
+                        <li>
+                            <a href="#">동영상</a>
+                        </li>
+                        <li>
+                            <a href="#">게임</a>
+                        </li>
+                        <li>
+                            <a href="#">애니</a>
+                        </li>
+                        <li>
+                            <a href="#">만화</a>
+                        </li>
+                        <li>
+                            <a href="#">도서</a>
+                        </li>
+                        <li>
+                            <a href="#">교육</a>
+                        </li>
+                        <li>
+                            <a href="#">유틸</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon"></i>
+                                웹툰
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon"></i>
+                                성인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">기타</a>
+                        </li>
+                        <li>
+                            <a href="#">요청자료</a>
+                        </li>
+                    </ul>
+                    <div id="subNav">
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화1</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화2</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화3</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화4</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화5</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화6</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화7</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화8</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화9</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화10</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화11</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li><a href="#">인기영화12</a></li>
+                            <li><a href="#">한국영화</a></li>
+                            <li><a href="#">액션/전쟁</a></li>
+                            <li><a href="#">SF/판타지</a></li>
+                            <li><a href="#">공포/스릴러</a></li>
+                            <li><a href="#">코미디/드라마</a></li>
+                            <li><a href="#">멜로/가족</a></li>
+                            <li><a href="#">HD고화질</a></li>
+                            <li><a href="#">일반</a></li>
+                            <li><a href="#"><i class="icon"></i>성인</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- // header -->
+        <!-- container -->
+        <div id="container">
+            <div class="inner flex">
+                <aside class="aside">
+                    <article class="coupon-box mb-30">
+                        <div class="coupon">
+                            <img src="../img/coupon.png" alt="무료 다운로드 쿠/폰/등/록">
+                        </div>
+                        <a href="#">등록하기</a>
+                    </article>
+                    <article class="topsch-box mb-30">
+                        <h3 class="title">실시간 인기 검색어</h3>
+                        <ul>
+                            <li>킹덤<span class="stay">-</span></li>
+                            <li>발신제한<span class="stay">-</span></li>
+                            <li>발신<span class="stay">-</span></li>
+                            <li>보스<span class="stay">-</span></li>
+                            <li>보스베이비<span class="stay">-</span></li>
+                            <li>완결<span class="down">2</span></li>
+                            <li>마블<span class="stay">-</span></li>
+                            <li>랑종<span class="up">2</span></li>
+                            <li>슬기로운<span class="down">2</span></li>
+                            <li>원피스<span class="stay">-</span></li>
+                        </ul>
+                    </article>
+                    <article class="btn-box mb-30">
+                        <a href="#">
+                            <i class="icon">
+                                <img src="../img/ic_point.png" alt="포인트 충전하기">
+                            </i>
+                            포인트 충전하기
+                        </a>
+                        <a href="#">
+                            <i class="icon">
+                                <img src="../img/ic_term.png" alt="정액권 충전하기">
+                            </i>
+                            정액권 충전하기
+                        </a>
+                        <a href="#">
+                            <i class="icon">
+                                <img src="../img/ic_event.png" alt="이벤트 충전하기">
+                            </i>
+                            이벤트 충전하기
+                        </a>
+                    </article>
+                    <article class="custom-box mb-30">
+                        <h3 class="title">고객센터 안내</h3>
+                        <p class="num">1588-1588</p>
+                        <p class="time">평일<storng>10:00 ~ 18:00</storng></p>
+                        <p class="time">점심시간<storng>12:30 ~ 13:30</storng></p>
+                        <a href="#" class="inquiry-btn">1:1문의하기</a>
+                        <a href="#" class="remote-btn">원격지원요청</a>
+                    </article>
+                    <article class="down-box">
+                        <a href="#">
+                            <i class="icon">
+                                <img src="../img/img_download.png" alt="다운로드 프로그램 수동 설치하기">
+                            </i>
+                            <p>
+                                다운로드 프로그램
+                                <strong>수동 설치하기</strong>
+                            </p>
+                        </a>
+                    </article>
+                </aside>
+                <section class="contents mypage">
+                    <div class="contents-box">
+                        <article class="title-area mb-30">
+                            <h2>마이페이지</h2>
+                        </article>
+                        <article class="my-info-box">
+                            <div class="info">
+                                <div class="mb-info">
+                                    <strong><span>ATTNO13</span>님의 정보입니다.</strong>
+                                    <p>회원님의 정보 변경, 포인트 정보를 확인 하실 수 있습니다.</p>
+                                    <a href="#">회원정보수정</a>
+                                </div>
+                                <div class="state">
+                                    <span>회원상태</span>
+                                    <p>일반회원</p>
+                                    <a href="#">판매자 신청</a>
+                                </div>
+                                <div class="state">
+                                    <span>실명인증</span>
+                                    <p>인증안함</p>
+                                    <a href="#">성인 인증하기</a>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <p>포인트<strong>10,000<span>P</span></strong></p>
+                                <p>보너스 포인트<strong>5,000<span>P</span></strong></p>
+                                <p>쿠폰<strong>0<span>장</span></strong></p>
+                                <a href="#">포인트 충전하기</a>
+                            </div>
+                            <div class="pass">
+                                <p>정액권<strong>0<span>일</span></strong></p>
+                                <p>마일리지<strong>1,458<span>M</span></strong></p>
+                                <a href="#">정액권 신청하기</a>
+                            </div>
+                        </article>
+                        <article class="tab-menu">
+                            <ul>
+                                <li><a href="#" class="on">컨텐츠 관리</a></li>
+                                <li><a href="#">포인트 관리</a></li>
+                                <li><a href="#">회원정보 관리</a></li>
+                                <li><a href="#">쪽지함</a></li>
+                                <li><a href="#">판매자 신청</a></li>
+                            </ul>
+                        </article>
+                        <article id="" class="tab-contents">
+                            <ul class="sub-tab" data-tabMenu>
+                                <li><a href="#" class="on" data-tab="1">내가 받은 자료</a></li>
+                                <li><a href="#" data-tab="2">내가 찜한 자료</a></li>
+                                <li><a href="#" data-tab="3">나의 요청 자료</a></li>
+                            </ul>
+                            <div class="sub-tab-con" data-tabCon="1">
+                                <h3>내가 받은 자료</h3>
+                                <ul class="guide-box">
+                                    <li data-icon="·">구매하신 컨텐츠는 2일동안 무료다운로드 이용이 가능하며, 만족도 평가시 무료다운로드 기간이 연장됩니다.</li>
+                                    <li data-icon="·">만족도 평가란 컨텐츠의 내용설명, 스크린샷, 파일 형태 등 종합적인 구성에 대하여 평가를 하는 것으로<br />평가한 컨텐츠는 무료 다운로드 기간이 1일(24시간) 연장됩니다.</li>
+                                    <li data-icon="·">정액제로 구매한 컨텐츠는 정액제 기간 만료시 다시받기 할 수 없습니다.</li>
+                                    <li data-icon="·">제재/삭제 처리가 된 컨텐츠는 다시받기가 제공이 되지 않습니다.</li>
+                                    <li data-icon="·">제휴 컨텐츠 다시받기는 저작권사의 요청으로 24시간내에 2회 가능합니다.</li>
+                                </ul>
+                                <article class="list-table">
+                                    <div class="btn-group">
+                                        <button type="button">
+                                            선택삭제
+                                        </button>
+                                        <button type="button">
+                                            전체삭제
+                                        </button>
+                                    </div>
+                                    <table>
+                                        <colgroup>
+                                            <col width="50px" />
+                                            <col width="60px" />
+                                            <col width="*" />
+                                            <col width="100px" />
+                                            <col width="70px" />
+                                            <col width="85px" />
+                                            <col width="85px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="" id="all">
+                                                        <label for="all"></label>
+                                                    </div>
+                                                </th>
+                                                <th>번호</th>
+                                                <th>제목</th>
+                                                <th>구매방법</th>
+                                                <th>분류</th>
+                                                <th>잔여일</th>
+                                                <th>만족도</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="7" class="empty">
+                                                    내가 받은 자료가 없습니다.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </article>
+                            </div>
+                            <div class="sub-tab-con" data-tabCon="2">
+                                <h3>내가 찜한 자료</h3>
+                            </div>
+                            <div class="sub-tab-con" data-tabCon="3">
+                                <h3>나의 요청 자료</h3>
+                            </div>
+                        </article>
+                        <article class="paging-container mt-40">
+                            <div class="paging-box">
+                                <a href="#" class="prev"></a>
+                                <a href="#" class="on">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#" class="next"></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <div class="con-fot">
+                <div class="inner flex">
+                    <div class="latest-box">
+                        <h3 class="title">공지사항<a href="#"><img src="../img/plus-circle.png" alt=""></a></h3>
+                        <ul>
+                            <li><a href="#" class="ellipsis">디지털 성범죄 근절, 안심하고 이용할 수 있는 파일썬!</a></li>
+                            <li><a href="#" class="ellipsis">공지 공지 불법 음란물 업로드 금지 안내</a></li>
+                            <li><a href="#" class="ellipsis">[7월 3주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[7월 1주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[6월 4주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                        </ul>
+                    </div>
+                    <div class="latest-box">
+                        <h3 class="title">저작권 보호목록<a href="#"><img src="../img/plus-circle.png" alt=""></a></h3>
+                        <ul>
+                            <li><a href="#" class="ellipsis">디지털 성범죄 근절, 안심하고 이용할 수 있는 파일썬!</a></li>
+                            <li><a href="#" class="ellipsis">공지 공지 불법 음란물 업로드 금지 안내</a></li>
+                            <li><a href="#" class="ellipsis">[7월 3주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[7월 1주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[6월 4주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                        </ul>
+                    </div>
+                    <div class="latest-box">
+                        <h3 class="title">자주 묻는 질문<a href="#"><img src="../img/plus-circle.png" alt=""></a></h3>
+                        <ul>
+                            <li><a href="#" class="ellipsis">디지털 성범죄 근절, 안심하고 이용할 수 있는 파일썬!</a></li>
+                            <li><a href="#" class="ellipsis">공지 공지 불법 음란물 업로드 금지 안내</a></li>
+                            <li><a href="#" class="ellipsis">[7월 3주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[7월 1주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                            <li><a href="#" class="ellipsis">[6월 4주차] 불법 음란물 업로드 회원 제재 명단</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="ft-menu mb-30">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">저작권보호센터</a></li>
+                    <li><a href="#">개인정보침해신고센터</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <address>
+                    (주)파일달 | 서울특별시 강남구 강남대로 99길 99, 101호 | 대표 : 홍길동<br>
+                    사업자등록번호 : 123-12-12345 | 통신판매업 : 제 2021-서울강남-9999호<br>
+                    저작권, 청소년, 정보보호 책임자 : 대표 홍길동(filedal@gmail.com) | 대표번호 : 1588-1588
+                </address>
+                <p class="copy">Copyright (c) Filedal. All right reserved.</p>
+                <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
