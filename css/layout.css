@@ -184,8 +184,8 @@
 .contents-box .tab-menu ul li:not(:first-child) { margin-left: 2px;}
 .contents-box .tab-menu ul li a.on { color: #562BD1; background: #FFFFFF; border: 2px solid #562BD1; border-bottom-color: #FFFFFF; z-index: 1;}
 
-.contents-box [data-tabMenu] { display: none;}
-.contents-box [data-tabMenu].on { display: block;}
+.contents-box [data-tabCon] { display: none;}
+.contents-box [data-tabCon].on { display: block;}
 
 /* list-table */
 .list-table .btn-group { display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px;}
