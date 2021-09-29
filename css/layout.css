@@ -191,9 +191,10 @@
 /* list-table */
 .list-table .btn-group { display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px;}
 .list-table .btn-group button { font-size: 14px; text-align: center; color: #404040; margin-left: 5px; padding: 8px 12px; background: transparent; border: 1px solid #D0D0D0; border-radius: 2px; outline: none;}
-.list-table table { width: 100%;}
+.list-table table { width: 100%; table-layout: fixed;}
 .list-table table th { height: 50px; font-size: 16px; text-align: center; color: #666666; border-top: 1px solid #D0D0D0; border-bottom: 1px solid #D0D0D0; vertical-align: middle;}
-.list-table table td { border-bottom: 1px solid #D0D0D0; vertical-align: middle;}
+.list-table table td { height: 53px; font-size: 16px; text-align: center; color: #404040; border-bottom: 1px solid #D0D0D0; vertical-align: middle;}
+.list-table table td .subject { display: block; text-align: left;}
 .list-table table td.empty { height: 177px; font-size: 16px; font-weight: 500; line-height: 23px; color: #A8A8A8; text-align: center; background: #F5F5F5;}
 .list-table table .checkbox { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
 .list-table table .checkbox label { width: 20px; height: 20px;}
