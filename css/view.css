@@ -1,0 +1,85 @@
+#viewHeader { position: fixed; top: 0; left: 0; display: flex; align-items: center; width: 100%; height: 60px; padding: 0 10px; background: #562BD1; z-index: 10;}
+#viewHeader h2 { font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF;}
+#viewHeader span { font-size: 14px; line-height: 20px; color: #C1ACFF; margin-left: auto;}
+#viewContent { position: relative; width: calc(100% - 260px); margin-top: 60px;}
+#viewContent .view-info table { width: 100%;}
+#viewContent .view-info table.info-table th,
+#viewContent .view-info table.info-table td { font-size: 13px; font-weight: 400; line-height: 19px; text-align: center; border-bottom: 1px solid #E3E3E3; vertical-align: middle;}
+#viewContent .view-info table.info-table th { height: 50px; color: #404040; background: #F5F5F5;}
+#viewContent .view-info table.info-table td { color: #666666;}
+#viewContent .view-info table.info-table td .down-score { position: relative; display: inline-block; width: 66px; height: 11px; background: url(../img/star-score.png) no-repeat; background-position: 0 -12px;}
+#viewContent .view-info table.info-table td .down-score div { position: absolute; top: 0; left: 0; height: 11px; background: url(../img/star-score.png) no-repeat; background-position: 0 0;}
+#viewContent .view-info table.info-table td .point-text { display: inline-flex; align-items: center; color: #562BD1;}
+#viewContent .view-info table.info-table td .point-text i { color: #D0D0D0; text-decoration-line: line-through;}
+#viewContent .view-info table.info-table td .point-text img { margin: 2px 2px 0 4px;}
+#viewContent .view-info table.info-table .title td { height: 40px; color: #404040;}
+#viewContent .view-info .file-list { height: 110px; padding: 12px 0; overflow-y: scroll;}
+#viewContent .view-info .file-list ul { width: 100%;}
+#viewContent .view-info .file-list ul li { display: flex; align-items: center; font-size: 13px; line-height: 19px; color: #666666; margin-bottom: 5px;}
+#viewContent .view-info .file-list ul li div.name { width: 63%; text-align: left;}
+#viewContent .view-info .file-list ul li:first-child div.name {  padding-left: 33px; background: url(../img/icon-folder.png) no-repeat 12px center;}
+#viewContent .view-info .file-list ul li:not(:first-child) div.name { padding-left: 39px; background: url(../img/icon-file.png) no-repeat 21px center;}
+#viewContent .view-info .file-list ul li div.time { width: 13.5%;}
+#viewContent .view-info .file-list ul li div.point { width: 12.5%;}
+#viewContent .view-info .file-list ul li div.size { width: 12%;}
+#viewContent .btn-wrap { position: relative; width: 100%; padding: 25px 10px; background: #FFFFFF; z-index: 9;}
+#viewContent .btn-wrap .top-btn { position: absolute; top: -46px; right: 11px; display: none; align-items: center; justify-content: center; width: 86px; height: 36px; font-size: 14px; line-height: 20px; color: #FFFFFF; background: #333333; border-radius: 30px;}
+#viewContent .btn-wrap .btn-group { display: flex; align-items: center; justify-content: center;}
+#viewContent .btn-wrap .btn-group a { display: flex; align-items: center; justify-content: center;}
+#viewContent .btn-wrap .btn-group .prev,
+#viewContent .btn-wrap .btn-group .next { width: 72px; height: 36px; font-size: 14px; line-height: 20px; color: #404040; border: 1px solid #D0D0D0; border-radius: 30px;}
+#viewContent .btn-wrap .btn-group .down,
+#viewContent .btn-wrap .btn-group .coupon { height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; border-radius: 100px;}
+#viewContent .btn-wrap .btn-group .down { width: 205px; background: #00C2B6;}
+#viewContent .btn-wrap .btn-group .coupon { width: 154px; background: #A8A8A8;}
+#viewContent .btn-wrap.fix { position: fixed; bottom: 0; width: calc(100% - 260px); padding: 17px 10px; border-top: 1px solid #E3E3E3;}
+#viewContent .btn-wrap.fix .top-btn { display: flex;}
+#viewContent .btn-wrap.fix + .title-tab { margin-top: 96px;}
+#viewContent .title-tab { display: flex; align-items: center; justify-content: center; height: 60px; background: #F5F5F5; border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;}
+#viewContent .title-tab a { position: relative; font-size: 16px; line-height: 23px; color: #888888; margin: 0 35px;}
+#viewContent .title-tab a.on { font-weight: 700; color: #202020;}
+#viewContent .title-tab a.on::after { content: ""; position: absolute; top: calc(100% + 14px); left: -6px; display: block; width: calc(100% + 12px); height: 4px; background: #562BD1;}
+#viewContent .content { padding: 40px 0 70px;}
+#viewContent .content img { display: block; margin: 0 auto; max-width: 100%;}
+#viewContent .diff { padding: 15px 0 50px;}
+#viewContent .diff .cate-group { margin-bottom: 15px;}
+#viewContent .diff .cate-group a { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 29px; font-size: 12px; font-weight: 500; line-height: 17px; color: #888888; border: 1px solid #E3E3E3; border-radius: 4px; margin-left: 10px;}
+#viewContent .diff .cate-group a.on { color: #562BD1; border-color: #562BD1;}
+#viewContent .diff table { width: 100%; table-layout: fixed;}
+#viewContent .diff table th,
+#viewContent .diff table td { font-size: 13px; font-weight: 400; line-height: 19px; text-align: center; vertical-align: middle; border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;}
+#viewContent .diff table th { height: 40px; color: #404040;}
+#viewContent .diff table td { height: 43px; color: #666666;}
+#viewContent .diff table td p { text-align: left; color: #333333;}
+#viewContent .diff table td p::before { content: ""; display: inline-block; width: 15px; height: 14px; background: url(../img/icon-folder.png) no-repeat center; margin-right: 6px; vertical-align: middle;}
+#viewContent .diff .paging { display: flex; justify-content: center; width: 100%;}
+#viewContent .diff .paging .paging-box { display: flex; align-items: center;}
+#viewContent .diff .paging .paging-box a.prev,
+#viewContent .diff .paging .paging-box a.next { width: 23px; height: 23px; border: 1px solid #D0D0D0; border-radius: 50%; background: url(../img/icon-view-paging.png) no-repeat center;}
+#viewContent .diff .paging .paging-box a.prev { transform: rotate(180deg);}
+#viewContent .diff .paging .paging-box a { font-family: 'Open Sans'; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 14px; line-height: 19px; color: #202020; margin: 0 5px; border-radius: 50%;}
+#viewContent .diff .paging .paging-box a.on,
+#viewContent .diff .paging .paging-box a:hover { color: #562BD1; border: 1px solid #562BD1;}
+#viewContent .comment { padding: 20px 0 50px;}
+#viewContent .comment .info { font-size: 14px; font-weight: 500; line-height: 20px; color: #562BD1; margin-left: 10px;}
+#viewContent .comment .create-box { display: flex; width: calc(100% - 20px); height: 87px; margin: 18px 10px 5px; border: 1px solid #E3E3E3; border-radius: 12px; overflow: hidden;}
+#viewContent .comment .create-box textarea { width: 88%; height: 100%; font-size: 14px; font-weight: 400; color: #333333; line-height: 23px; padding: 15px 20px; border: none; outline: none; resize: none;}
+#viewContent .comment .create-box textarea::placeholder { font-size: 14px; color: #A8A8A8;}
+#viewContent .comment .create-box input { width: 12%; height: 100%; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; text-align: center; background: #00C2B6; border: none; outline: none; cursor: pointer;}
+#viewContent .comment table { width: 100%; table-layout: fixed;}
+#viewContent .comment table th,
+#viewContent .comment table td { height: 50px; font-size: 14px; line-height: 20px; text-align: left; border-bottom: 1px solid #E3E3E3; vertical-align: middle;}
+#viewContent .comment table th { font-weight: 700; color: #404040; padding-left: 20px;}
+#viewContent .comment table td { color: #666666;}
+
+#viewData { position: fixed; top: 60px; right: 0; width: 260px; background: #F5F5F5;}
+#viewData .btn-group { display: flex; align-items: center; justify-content: space-between; padding: 10px;}
+#viewData .btn-group a { display: flex; align-items: center; justify-content: center; width: 44.6%; height: 30px; font-size: 13px; font-weight: 500; line-height: 19px; color: #888888; border: 1px solid #A8A8A8; border-radius: 4px;}
+#viewData h3 { display: flex; align-items: center; justify-content: center; width: 100%; height: 44px; font-size: 14px; font-weight: 700; line-height: 20px; color: #FFFFFF; background: #666666;}
+#viewData .data-list { padding: 0 10px 12px;}
+#viewData dl { display: flex; padding: 12px 0; border-bottom: 1px solid #E3E3E3;}
+#viewData dl dt { flex: 0 0 100px; height: 56px;}
+#viewData dl dt img { max-width: 100%;}
+#viewData dl dd p.subject { font-size: 12px; line-height: 17px; color: #404040; padding-left: 10px;}
+#viewData dl dd p.info { font-size: 12px; line-height: 18px; color: #888; text-align: right; margin-top: 5px;}
+

@@ -17,8 +17,9 @@
 #header .con .sch-box form { display: flex; align-items: center; width: 100%; height: 100%; padding: 12px 52px 12px 0;}
 #header .con .sch-box .select-box { position: relative; display: flex; align-items: center; justify-content: center; width: 110px; height: 100%; padding-right: 21px; background: url(../img/select-arrow.png) no-repeat right 23px center; border-right: 1px solid #C1ACFF;}
 #header .con .sch-box .select-box p { width: 100%; font-size: 18px; font-weight: 500; line-height: 26px; color: #FFFFFF; text-align: center; cursor: pointer;}
-#header .con .sch-box .select-box ul { display: none; position: absolute; top: calc(100% + 12px); left: 20px; width: calc(100% - 43px); background: #FFFFFF; border: 1px solid #CCCCCC; z-index: 20;}
-#header .con .sch-box .select-box ul li { font-size: 14px; font-weight: 500; color: #818181; line-height: 20px; padding: 2px 5px; cursor: pointer;}
+#header .con .sch-box .select-box ul { display: none; position: absolute; top: calc(100% + 5px); left: 20px; width: calc(100% - 19px); padding: 10px 15px; background: #FFFFFF; border: 1px solid #CCCCCC; border-radius: 8px; z-index: 101;}
+#header .con .sch-box .select-box ul li { font-size: 14px; font-weight: 400; color: #666666; line-height: 25px; padding: 2px 5px; cursor: pointer;}
+#header .con .sch-box .select-box ul li:hover { color: #562BD1;}
 #header .con .sch-box input { flex: 1 0 auto; font-size: 18px; font-weight: 500; color: #FFFFFF; padding-left: 20px; background-color: transparent; border: none; outline: none;}
 #header .con .sch-box input::placeholder { font-weight: 400; color: #C1ACFF;}
 #header .con .sch-box .sch-btn { position: absolute; right: 31px; width: 21px; height: 22px; background: url(../img/search.png) no-repeat center; border: none; outline: none;}

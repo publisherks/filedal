@@ -5,6 +5,7 @@ $(document).ready(function () {
     modal('a[data-modal]');
     tab();
     accordion();
+    listView();
 });
 
 function modal (target) {
@@ -143,5 +144,15 @@ function accordion () {
             accCon.slideUp("fast");
             parent.find(accCon).slideDown("fast");
         }
+    })
+}
+
+function listView () {
+    let target = $(".view-link");
+
+    target.off("click.listview").on("click.listview", function(e) {
+        e.preventDefault();
+        let href = $(this).attr('href');
+        window.open(href, "View", "width=1060, height=975, location=no, toolbar=no");
     })
 }
