@@ -727,7 +727,7 @@
                         <input type="checkbox" name="" id="loginSave">
                         <label for="loginSave">로그인 유지</label>
                     </div>
-                    <a href="#n" class="find-link">아이디/비밀번호 찾기</a>
+                    <a href="#n" rel="modal:open" data-modal="#findModal" class="find-link">아이디/비밀번호 찾기</a>
                 </div>
                 <hr class="dividing"/>
                 <p class="sns-info-text">애플, 카카오톡, 네이버 계정으로도 서비스 이용이 가능합니다.</p>
@@ -813,11 +813,204 @@
         </div>
     </div>
     <div id="findModal" class="modal">
+        <a href="#" rel="modal:close" class="close-btn"><img src="img/pop_close.png" alt=""></a>
         <div class="modal-con">
-            <h3 class="modal-logo">
-                <img src="img/modal-logo.png" alt="FILEDAL">
-                <span>모든 파일들이 모인 곳! 파일달에서 오늘도 재밋는 하루 보내세요:)</span>
-            </h3>
+            <h3 class="title">파일달 아이디/비밀번호 찾기</h3>
+            <div class="find-box">
+                <form action="">
+                    <article class="tab-menu" data-tabMenu>
+                        <ul>
+                            <li><a href="#" class="on" data-tab="1">아이디 찾기</a></li>
+                            <li><a href="#" data-tab="2">비밀번호 찾기</a></li>
+                        </ul>
+                    </article>
+                    <article id="findId" class="tab-contents" data-tabCon="1">
+                        <ul class="sub-tab" data-subTab>
+                            <li><a href="#" class="on" data-tab="1">회원정보로 찾기</a></li>
+                            <li><a href="#" data-tab="2">아이핀으로 찾기</a></li>
+                            <li><a href="#" data-tab="3">본인확인으로 찾기</a></li>
+                        </ul>
+                        <div class="sub-tab-con" data-tabCon="1">
+                            <div class="flex-row">
+                                <div class="radio">
+                                    <input type="radio" name="find" id="email" value="email" checked>
+                                    <label for="email"><i></i>이메일로 찾기</label>
+                                </div>
+                                <div class="radio ml-15">
+                                    <input type="radio" name="find" id="name" value="name">
+                                    <label for="name"><i></i>실명으로 찾기</label>
+                                </div>
+                            </div>
+                            <div id="emailTab" class="find-tab">
+                                <div class="form-box">
+                                    <div class="flex-m">
+                                        <p>이메일</p>
+                                        <input type="email">
+                                    </div>
+                                </div>
+                                <p class="info">
+                                    회원정보에 등록하신 <strong>이메일</strong>을 정확히 입력해주세요.<br>
+                                    이메일 주소가 기억나지 않는 경우 <strong>고객센터로 문의</strong> 주시기 바랍니다.
+                                </p>
+                                <button type="submit">아이디 찾기</button>
+                            </div>
+                            <div id="nameTab" class="find-tab">
+                                <div class="form-box">
+                                    <div class="flex-m mb-10">
+                                        <p>이름</p>
+                                        <input type="text">
+                                    </div>
+                                    <div class="flex-m">
+                                        <p>생년월일</p>
+                                        <div class="flex-m flex-1 flex-bet">
+                                            <select name="year" id="year">
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                            </select>
+                                            <span>년</span>
+                                            <select name="month" id="month">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <span>월</span>
+                                            <select name="day" id="day">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <span>일</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="info">
+                                    <strong>실명인증 또는 성인인증</strong>을 완료한 회원일 경우 실명으로 아이디 찾기가 가능합니다.
+                                </p>
+                                <button type="submit">아이디 찾기</button>
+                            </div>
+                        </div>
+                        <div class="sub-tab-con" data-tabCon="2"></div>
+                        <div class="sub-tab-con" data-tabCon="3"></div>
+                        <!-- <div class="find-complete">
+                            <p class="comple-tit">회원 ID찾기 검색 결과입니다.</p>
+                            <div class="comple-box">
+                                <p>
+                                    회원님의 아이디는<br>
+                                    <strong>filed*******</strong> 입니다.
+                                </p>
+                            </div>
+                            <p class="info">
+                                개인정보 보호를 위해 아이디의 일부는 *로 표기됩니다.
+                            </p>
+                            <div class="btn-box">
+                                <a href="#n" class="cancel">
+                                    뒤로
+                                </a>
+                                <a href="#n" class="confirm" rel="modal:close">
+                                    확인
+                                </a>
+                            </div>
+                        </div> -->
+                    </article>
+                    <article id="findPs" class="tab-contents" data-tabCon="2">
+                        <ul class="sub-tab" data-subTab>
+                            <li><a href="#" class="on" data-tab="1">회원정보로 찾기</a></li>
+                            <li><a href="#" data-tab="2">아이핀으로 찾기</a></li>
+                            <li><a href="#" data-tab="3">본인확인으로 찾기</a></li>
+                        </ul>
+                        <div class="sub-tab-con" data-tabCon="1">
+                            <div class="form-box">
+                                <div class="flex-m mb-10">
+                                    <p>아이디</p>
+                                    <input type="text">
+                                </div>
+                                <div class="flex-m mb-10">
+                                    <p>이메일</p>
+                                    <div class="flex-m flex-1 flex-bet">
+                                        <input type="text" class="email">
+                                        <span>@</span>
+                                        <input type="text" class="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="info">
+                                회원정보에 등록하신 <strong>이메일</strong>을 정확히 입력해주세요.<br>
+                                이메일 주소가 기억나지 않는 경우 <strong>고객센터로 문의</strong> 주시기 바랍니다.
+                            </p>
+                            <button type="submit">비밀번호 찾기</button>
+                        </div>
+                        <div class="sub-tab-con" data-tabCon="2">
+                            <div class="form-box">
+                                <div class="flex-m mb-10">
+                                    <p>아이디</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <p class="info">
+                                <strong>실명인증 또는 성인인증</strong>을 완료한 회원일 경우 실명으로 아이디 찾기가 가능합니다.
+                            </p>
+                            <button type="submit">비밀번호 찾기</button>
+                        </div>
+                        <div class="sub-tab-con" data-tabCon="3"></div>
+                        <!-- <div class="find-complete">
+                            <p class="comple-tit">비밀번호 찾기 검색 결과입니다.</p>
+                            <div class="comple-box">
+                                <p>
+                                    회원가입 정보에 등록된 메일로<br>
+                                    <b>임시 비밀번호</b>를 발송하였습니다.<br>
+                                    <span>이메일 : filedal@naver.com</span>
+                                </p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#n" class="cancel">
+                                    뒤로
+                                </a>
+                                <a href="#n" class="confirm" rel="modal:close">
+                                    확인
+                                </a>
+                            </div>
+                        </div> -->
+                    </article>
+                </form>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    const radio = $("input[name='find']");
+
+                    radio.change(function () {
+                        let val = this.value;
+                        $(".find-tab").hide();
+                        $("#"+val+"Tab").show();
+                    })
+
+                });
+            </script>
         </div>
     </div>
 </body>
