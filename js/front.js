@@ -7,6 +7,7 @@ $(document).ready(function () {
     subtab();
     accordion();
     listView();
+    upload();
 });
 
 function modal (target) {
@@ -182,5 +183,26 @@ function listView () {
         e.preventDefault();
         let href = $(this).attr('href');
         window.open(href, "View", "width=1060, height=975, location=no, toolbar=no");
+    })
+}
+
+function upload () {
+    let target = $(".upload-link"),
+        area   = $(".upload-area");
+
+    $(".upload-btn").off("click.uploadArea").on("click.uploadArea", function (e) {
+        e.preventDefault();
+        area.show();
+    })
+
+    area.find(".upload-close").off("click.uploadClose").on("click.uploadClose", function (e) {
+        e.preventDefault();
+        area.hide();
+    })
+
+    target.off("click.uploadLink").on("click.uploadLink", function(e) {
+        e.preventDefault();
+        let href = $(this).attr('href');
+        window.open(href, "Upload", "width=980, height=915, location=no, toolbar=no");
     })
 }
