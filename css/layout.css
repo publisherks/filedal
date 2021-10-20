@@ -305,7 +305,7 @@
 #findModal .form-box p { flex: 0 0 78px; font-size: 16px; color: #202020; line-height: 23px;}
 #findModal .form-box input { flex: 1 0 auto; height: 42px; font-size: 16px; line-height: 23px; color: #404040; padding: 0 14px; border: 1px solid #E3E3E3; background: #FFFFFF; border-radius: 4px; outline: none;}
 #findModal .form-box input.email { flex: 0 0 auto; width: 165px;}
-#findModal .form-box select { width: 80px; height: 42px; font-size: 16px; line-height: 23px; color: #404040; padding: 0 14px; border: 1px solid #E3E3E3; background: url(../img/arrow-down-wh-s.png) no-repeat right calc(100% - 12px) #FFFFFF; border-radius: 4px; outline: none; appearance:none;}
+#findModal .form-box select { width: 80px; height: 42px; font-size: 16px; line-height: 23px; color: #404040; padding: 0 14px; border: 1px solid #E3E3E3; background: url(../img/arrow-down-wh-s.png) no-repeat calc(100% - 12px) center #FFFFFF; border-radius: 4px; outline: none; appearance:none;}
 #findModal .form-box select#year { width: 101px;}
 #findModal .sub-tab-con p.info { font-size: 14px; line-height: 20px; color: #888888; margin-top: 15px;}
 #findModal .sub-tab-con p.info strong { font-weight: 400; color: #404040;}

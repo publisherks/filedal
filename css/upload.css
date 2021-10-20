@@ -1,0 +1,37 @@
+#uploadHeader { display: flex; align-items: center; width: 100%; height: 60px; padding: 0 10px; background: #562BD1; z-index: 10;}
+#uploadHeader h2 { font-size: 18px; font-weight: 700; line-height: 26px; color: #FFFFFF;}
+#uploadHeader a { display: flex; align-items: center; justify-content: center; width: 96px; height: 35px; font-size: 13px; font-weight: 500; line-height: 19px; color: #FFFFFF; background: #7348F0; border: 1px solid #9C79FF; border-radius: 4px; margin-left: auto;}
+#uploadContent { padding: 10px 20px 35px;}
+#uploadContent table { width: 100%;}
+#uploadContent table td { padding: 5px 10px 5px 0;}
+#uploadContent table tr td:last-child { padding-right: 0;}
+#uploadContent table td select { width: 100%; height: 50px; font-size: 16px; line-height: 23px; color: #404040; padding: 0 20px; border: 1px solid #E3E3E3; background: url(../img/arrow-down-wh-s.png) no-repeat calc(100% - 20px) center #FFFFFF; border-radius: 4px; outline: none; appearance:none; cursor: pointer;}
+#uploadContent table td .set-div { display: flex; align-items: center; justify-content: flex-end;}
+#uploadContent table td .set-div p { font-size: 16px; line-height: 23px; color: #404040; margin-right: 10px;}
+#uploadContent table td .set-div .checkbox label { font-size: 16px; line-height: 23px; color: #E02E2E;}
+#uploadContent table td .set-div .checkbox label::before { top: 1.5px}
+#uploadContent table td input { width: 100%; height: 50px; font-size: 16px; line-height: 23px; color: #404040; padding: 0 20px; border: 1px solid #E3E3E3; border-radius: 4px; outline: none;}
+#uploadContent table td input::placeholder { color: #A8A8A8;}
+#uploadContent table td textarea { width: 100%; height: 334px; font-size: 16px; line-height: 23px; color: #404040; padding: 20px; border: 1px solid #E3E3E3; outline: none;}
+#uploadContent table td.upload-td > div { border: 1px solid #E3E3E3;}
+#uploadContent table td .img-box { display: flex; align-items: center; flex-wrap: wrap; padding: 20px 20px 10px 0;}
+#uploadContent table td .img-box .img { position: relative; width: 58px; height: 58px; border: 1px solid #E3E3E3; margin-left: 18px; margin-bottom: 10px;}
+#uploadContent table td .img-box .img img { width: 100%; height: 100%;}
+#uploadContent table td .img-box .img .del-btn { position: absolute; top: -7px; right: -9px;}
+#uploadContent table td .btn-box { display: flex; align-items: center; padding: 0 20px 5px;}
+#uploadContent table td .btn-box p { font-size: 14px; line-height: 20px; color: #A8A8A8;}
+#uploadContent table td .btn-box p span { color: #E02E2E;}
+#uploadContent table td .btn-box .file-box { margin-left: auto;}
+#uploadContent table td .btn-box .file-box label { display: flex; align-items: center; justify-content: center; width: 117px; height: 40px; font-size: 14px; font-weight: 700; line-height: 20px; color: #FFFFFF; background: #00C2B6; border-radius: 2px;}
+#uploadContent table td .btn-box .file-box input { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: none;}
+#uploadContent table td .hd-box { display: flex; align-items: center; padding: 10px 20px; background: #F5F5F5;}
+#uploadContent table td .hd-box p { font-size: 16px; font-weight: 700; line-height: 23px; color: #333333;}
+#uploadContent table td .hd-box .btn { display: flex; align-items: center; justify-content: center; width: 84px; height: 36px; font-size: 14px; font-weight: 700; color: #FFFFFF; background: #A8A8A8; border-radius: 2px;}
+#uploadContent table td .hd-box .btn.add { background: #00C2B6;}
+#uploadContent table td .upload-items { width: 100%; height: 130px; padding: 20px 15px; overflow-y: scroll;}
+#uploadContent table td .upload-items li { margin-bottom: 9px;}
+#uploadContent table td .upload-items li:last-child { margin-bottom: 0;}
+#uploadContent ul.info { margin-top: 12px;}
+#uploadContent ul.info li { font-size: 13px; line-height: 23px; color: #666666;}
+#uploadContent ul.info li.adult { font-weight: 500; color: #E02E2E;}
+#uploadContent .regist-btn { display: flex; align-items: center; justify-content: center; width: 205px; height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 23px; margin: 30px auto 0;}
