@@ -123,3 +123,10 @@
 .mypage .sub-tab-con .guide-box { width: 100%; padding: 30px; background: #F5F5F5; border-radius: 12px; margin-bottom: 40px;}
 .mypage .sub-tab-con .guide-box li { display: grid; grid-template-columns: 0 1fr; grid-gap: 12px; align-items: start; font-size: 15px; font-weight: 400; line-height: 30px; color: #666666; word-break: keep-all;}
 .mypage .sub-tab-con .guide-box li::before { content: attr(data-icon);}
+
+
+/* 판매자 등록 */
+.seller .seller-box .sub-tit { font-size: 18px; font-weight: 700; line-height: 26px; color: #562BD1; margin-bottom: 15px;}
+.seller .seller-box p.info { font-size: 16px; line-height: 26px; color: #666666; margin-bottom: 30px;}
+.seller .seller-box .text-box { padding: 30px 25px; background: #F5F5F5; border-radius: 12px; margin-bottom: 30px;}
+.seller .seller-box .text-box P { font-size: 14px; line-height: 24px; color: #666666;}

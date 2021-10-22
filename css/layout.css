@@ -321,3 +321,13 @@
 #findModal .find-complete .btn-box { display: flex; align-items: center; justify-content: center; margin-top: 40px;}
 #findModal .find-complete .btn-box a { display: flex; align-items: center; justify-content: center; width: 133px; height: 54px; font-size: 18px; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 27px;}
 #findModal .find-complete .btn-box a.cancel { background: #A8A8A8; margin-right: 14px;}
+
+#authenticationModal { width: 680px; height: 483px;}
+#authenticationModal .modal-con { padding: 60px 35px 0;}
+#authenticationModal .title { font-size: 22px; font-weight: 700; line-height: 32px; color: #202020; text-align: center; margin-bottom: 15px;}
+#authenticationModal .info { font-size: 16px; line-height: 23px; color: #404040; text-align: center; margin-bottom: 35px;}
+#authenticationModal .box { display: flex; padding: 25px 0; background: #F5F5F5; border-radius: 18px;}
+#authenticationModal .box > div { display: flex; flex-direction: column; align-items: center; justify-content: center; width: calc(100% / 3);}
+#authenticationModal .box > div:nth-child(2) { border-left: 1px solid #E3E3E3; border-right: 1px solid #E3E3E3;}
+#authenticationModal .box > div p { font-size: 16px; line-height: 23px; color: #404040; margin-top: 10px;}
+#authenticationModal .box > div a.btn { display: flex; align-items: center; justify-content: center; width: 127px; height: 38px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; margin-top: 9px; background: #00C2B6; border-radius: 19px;}

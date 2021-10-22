@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -348,271 +347,28 @@
                         </a>
                     </article>
                 </aside>
-                <section class="contents mypage">
+                <section class="contents seller">
                     <div class="contents-box">
-                        <article class="title-area mb-30">
-                            <h2>마이페이지</h2>
+                        <article class="title-area mb-35">
+                            <h2>판매자 등록하기</h2>
                         </article>
-                        <article class="my-info-box">
-                            <div class="info">
-                                <div class="mb-info">
-                                    <strong><span>ATTNO13</span>님의 정보입니다.</strong>
-                                    <p>회원님의 정보 변경, 포인트 정보를 확인 하실 수 있습니다.</p>
-                                    <a href="#">회원정보수정</a>
-                                </div>
-                                <div class="state">
-                                    <span>회원상태</span>
-                                    <p>일반회원</p>
-                                    <a href="seller.html">판매자 신청</a>
-                                </div>
-                                <div class="state">
-                                    <span>실명인증</span>
-                                    <p>인증안함</p>
-                                    <a href="#" rel="modal:open" data-modal="#authenticationModal">성인 인증하기</a>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <p>포인트<strong>10,000<span>P</span></strong></p>
-                                <p>보너스 포인트<strong>5,000<span>P</span></strong></p>
-                                <p>쿠폰<strong>0<span>장</span></strong></p>
-                                <a href="#">포인트 충전하기</a>
-                            </div>
-                            <div class="pass">
-                                <p>정액권<strong>0<span>일</span></strong></p>
-                                <p>마일리지<strong>1,458<span>M</span></strong></p>
-                                <a href="#">정액권 신청하기</a>
-                            </div>
-                        </article>
-                        <article class="tab-menu">
-                            <ul>
-                                <li><a href="#" class="on">컨텐츠 관리</a></li>
-                                <li><a href="#">포인트 관리</a></li>
-                                <li><a href="#">회원정보 관리</a></li>
-                                <li><a href="#">쪽지함</a></li>
-                                <li><a href="#">판매자 신청</a></li>
-                            </ul>
-                        </article>
-                        <article id="" class="tab-contents">
-                            <ul class="sub-tab" data-tabMenu>
-                                <li><a href="#" class="on" data-tab="1">내가 받은 자료</a></li>
-                                <li><a href="#" data-tab="2">내가 찜한 자료</a></li>
-                                <li><a href="#" data-tab="3">나의 요청 자료</a></li>
-                            </ul>
-                            <div class="sub-tab-con" data-tabCon="1">
-                                <h3>내가 받은 자료</h3>
-                                <ul class="guide-box">
-                                    <li data-icon="·">구매하신 컨텐츠는 2일동안 무료다운로드 이용이 가능하며, 만족도 평가시 무료다운로드 기간이 연장됩니다.</li>
-                                    <li data-icon="·">만족도 평가란 컨텐츠의 내용설명, 스크린샷, 파일 형태 등 종합적인 구성에 대하여 평가를 하는 것으로<br />평가한 컨텐츠는 무료 다운로드 기간이 1일(24시간) 연장됩니다.</li>
-                                    <li data-icon="·">정액제로 구매한 컨텐츠는 정액제 기간 만료시 다시받기 할 수 없습니다.</li>
-                                    <li data-icon="·">제재/삭제 처리가 된 컨텐츠는 다시받기가 제공이 되지 않습니다.</li>
-                                    <li data-icon="·">제휴 컨텐츠 다시받기는 저작권사의 요청으로 24시간내에 2회 가능합니다.</li>
-                                </ul>
-                                <article class="list-table">
-                                    <div class="btn-group">
-                                        <button type="button">
-                                            선택삭제
-                                        </button>
-                                        <button type="button">
-                                            전체삭제
-                                        </button>
-                                    </div>
-                                    <table>
-                                        <colgroup>
-                                            <col width="50px" />
-                                            <col width="60px" />
-                                            <col width="*" />
-                                            <col width="100px" />
-                                            <col width="70px" />
-                                            <col width="85px" />
-                                            <col width="85px" />
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="all">
-                                                        <label for="all"></label>
-                                                    </div>
-                                                </th>
-                                                <th>번호</th>
-                                                <th>제목</th>
-                                                <th>구매방법</th>
-                                                <th>분류</th>
-                                                <th>잔여일</th>
-                                                <th>만족도</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="7" class="empty">
-                                                    내가 받은 자료가 없습니다.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item1">
-                                                        <label for="item1"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item2">
-                                                        <label for="item2"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item3">
-                                                        <label for="item3"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item4">
-                                                        <label for="item4"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item5">
-                                                        <label for="item5"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item6">
-                                                        <label for="item6"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item7">
-                                                        <label for="item7"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item8">
-                                                        <label for="item8"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item9">
-                                                        <label for="item9"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><p class="subject ellipsis">슬기로운 의사생활</p></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="" id="item10">
-                                                        <label for="item10"></label>
-                                                    </div>
-                                                </td>
-                                                <td>999</td>
-                                                <td><a class="subject ellipsis">슬기로운 의사생활</a></td>
-                                                <td>구매방법</td>
-                                                <td>분류</td>
-                                                <td>잔여일</td>
-                                                <td>만족도</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </article>
-                            </div>
-                            <div class="sub-tab-con" data-tabCon="2">
-                                <h3>내가 찜한 자료</h3>
-                            </div>
-                            <div class="sub-tab-con" data-tabCon="3">
-                                <h3>나의 요청 자료</h3>
-                            </div>
-                        </article>
-                        <article class="paging-container mt-40">
-                            <div class="paging-box">
-                                <a href="#" class="prev"></a>
-                                <a href="#" class="on">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">6</a>
-                                <a href="#">7</a>
-                                <a href="#">8</a>
-                                <a href="#">9</a>
-                                <a href="#">10</a>
-                                <a href="#" class="next"></a>
+                        <article class="seller-box">
+                            <h3 class="sub-tit">파일달 판매자 준수사항</h3>
+                            <p class="info">
+                                파일달에서 저작권법, 컴퓨터 프로그램 보호법 및 동법률 시행령 등 관계법령에 따른 저작권 보호 및 음란자료 예방을 통해 올바른 컨텐츠 판매문화가 이루어 질 수 있도록 노력하고 있사오니 다음 사항에 대하여 협조해주시기 바랍니다.
+                            </p>
+                            <div class="text-box">
+                                <p>
+                                    1. 파일달에는 판매자님이 저작권을 가지고 있는 파일이나 저작권자의 배포 및 전송 동의를 받은 파일을 등록할 수 있습니다.<br>
+                                    2. 법에 저촉되거나 미풍양속을 해치는 음란성 자료는 등록할 수 없으며 이를 판매, 배포할 시에는 관련법 등에 의해 처벌 받을 수 있습니다.<br>
+                                    3. 타인의 저작권을 침해하는 자료를 무단으로 배포 시 저작권법 등 관련법에 의해 처벌 받을 수 있습니다.<br>
+                                    4. 파일달에서 판매하는 컨텐츠에 대한 민형사상의 책임은 등록한 회원님에게 있으며, 회사는 이에대해 일체의 책임을 지지않습니다.<br>
+                                    5. 컨텐츠 판매는 파일썬에서 허용하는 형태로 진행 되어야하며 이에 부합하지 않을 경우 컨텐츠 판매가 취소될 수 있습니다.<br>
+                                    - 파일달은 관련 법률에 의거하여 위 내용에 해당하는 사실이 접수되어 적발될 시 해당회원에게 사전 공지없이 관련 자료 삭제 및 이용정지를 할 수 있습니다.<br>
+                                    - 특히 음란물 유포 행위에 대해서는 회원자격상실 및 계약 해지를 원칙으로 처리되니 이점 유의하시기 바랍니다.<br>
+                                    6. 업로드되는 게시물이 제목등 설명과 상이한 경우나, 악성코드 및 광고 게시물일경우 법적 제재가 가해질 수 있습니다.<br>
+                                    7. 등록한 컨텐츠는 인코딩되어 모바일로 서비스 될 수 있습니다.
+                                </p>
                             </div>
                         </article>
                     </div>
@@ -673,33 +429,6 @@
                 <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
             </div>
         </footer>
-    </div>
-    <div id="authenticationModal" class="modal">
-        <a href="#" rel="modal:close" class="close-btn"><img src="../img/pop_close.png" alt=""></a>
-        <div class="modal-con">
-            <h3 class="title">파일달 본인인증</h3>
-            <p class="info">
-                해당 서비스는 본인 인증 후 이용 가능합니다.<br>
-                아래 본인확인을 통해 인증을 진행해주세요.
-            </p>
-            <div class="box">
-                <div>
-                    <img src="../img/authentication_ic_01.png" alt="">
-                    <p>휴대폰 인증</p>
-                    <a href="#n" class="btn">인증하기</a>
-                </div>
-                <div>
-                    <img src="../img/authentication_ic_02.png" alt="">
-                    <p>아이핀(i-PIN) 인증</p>
-                    <a href="#n" class="btn">인증하기</a>
-                </div>
-                <div>
-                    <img src="../img/authentication_ic_03.png" alt="">
-                    <p>신용/체크카드 인증</p>
-                    <a href="#n" class="btn">인증하기</a>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html>
