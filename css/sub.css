@@ -124,9 +124,31 @@
 .mypage .sub-tab-con .guide-box li { display: grid; grid-template-columns: 0 1fr; grid-gap: 12px; align-items: start; font-size: 15px; font-weight: 400; line-height: 30px; color: #666666; word-break: keep-all;}
 .mypage .sub-tab-con .guide-box li::before { content: attr(data-icon);}
 
+/* 쿠폰등록 */
+.coupon .coupon-box { position: relative; width: 825px; height: 1094px; background: url(../img/coupon_img.png) no-repeat center;}
+.coupon .input-box { position: absolute; top: 669px; left: 40px; width: 744px; height: 74px; background: #FFFFFF; border: 3px solid #4048D5; border-radius: 15px;}
+.coupon .input-box input { width: 100%; height: 100%; padding: 0 190px 0 35px; font-size: 25px; font-weight: 700; color: #333333; line-height: 34px; border: none; border-radius: 15px; outline: none;}
+.coupon .input-box button { position: absolute; top: -3px; right: -3px; width: 154px; height: 74px; font-size: 25px; font-weight: 700; line-height: 34px; color: #FFFFFF; background: #4048D5; border: none; border-radius: 0 15px 15px 0; outline: none;}
+
+/* 판매자 신청 */
+.seller .seller-box { position: relative; width: 825px; height: 1024px; background: url(../img/seller_img.png) no-repeat center;}
+.seller .seller-box .btn { display: flex; align-items: center; justify-content: center; position: absolute; top: 653px; left: 216px; width: 393px; height: 80px; font-size: 25px; font-weight: 700; line-height: 34px; color: #FFFFFF; background: #1D2679; border-radius: 19px;}
 
 /* 판매자 등록 */
-.seller .seller-box .sub-tit { font-size: 18px; font-weight: 700; line-height: 26px; color: #562BD1; margin-bottom: 15px;}
-.seller .seller-box p.info { font-size: 16px; line-height: 26px; color: #666666; margin-bottom: 30px;}
-.seller .seller-box .text-box { padding: 30px 25px; background: #F5F5F5; border-radius: 12px; margin-bottom: 30px;}
-.seller .seller-box .text-box P { font-size: 14px; line-height: 24px; color: #666666;}
+.seller-form .seller-box .sub-tit { font-size: 18px; font-weight: 700; line-height: 26px; color: #562BD1; margin-bottom: 15px;}
+.seller-form .seller-box p.info { font-size: 16px; line-height: 26px; color: #666666; margin-bottom: 30px;}
+.seller-form .seller-box .text-box { padding: 30px 25px; background: #F5F5F5; border-radius: 12px; margin-bottom: 30px;}
+.seller-form .seller-box .text-box P { font-size: 14px; line-height: 24px; color: #666666;}
+.seller-form .seller-box .check-text { position: relative; font-size: 16px; line-height: 26px; color: #404040; margin-bottom: 15px; padding-left: 21px; word-break: keep-all;}
+.seller-form .seller-box .check-text::before { content: ""; position: absolute; top: 4px; left: 0; display: block; width: 16px; height: 16px; background: url(../img/ic_info_check.png) no-repeat center;}
+.seller-form .seller-box .checkbox { text-align: center; margin: 50px 0;}
+.seller-form .seller-box .checkbox label { display: inline-block; font-size: 18px; line-height: 26px;}
+.seller-form .seller-box .checkbox label::before { top: 3px;}
+.seller-form .seller-from { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 50px; border: 5px solid #E3E3E3; border-radius: 12px;}
+.seller-form .seller-from p.label { font-size: 18px; font-weight: 500; line-height: 26px; color: #202020;}
+.seller-form .seller-from .input-box { position: relative; width: 400px; height: 50px; margin-bottom: 40px; border: 1px solid #E3E3E3; border-radius: 25px;}
+.seller-form .seller-from .input-box input { width: 100%; height: 100%; padding: 0 30px; font-size: 16px; font-weight: 400; color: #333333; line-height: 23px; text-align: center; border: none; border-radius: 25px; outline: none;}
+.seller-form .seller-from .input-box span { position: absolute; top: 56px; left: 0; right: 0; display: block; font-size: 13px; line-height: 19px; color: #E02E2E; text-align: center;}
+.seller-form .seller-from span.info { font-size: 14px; line-height: 20px; color: #666666;}
+.seller-form .seller-from .btn { display: flex; align-items: center; justify-content: center; width: 165px; height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; margin: 0 5px; background: #00C2B6; border-radius: 23px;}
+.seller-form .regist-btn { display: flex; align-items: center; justify-content: center; width: 198px; height: 54px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 27px; margin: 30px auto 0;}
