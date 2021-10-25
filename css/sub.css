@@ -152,3 +152,19 @@
 .seller-form .seller-from span.info { font-size: 14px; line-height: 20px; color: #666666;}
 .seller-form .seller-from .btn { display: flex; align-items: center; justify-content: center; width: 165px; height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; margin: 0 5px; background: #00C2B6; border-radius: 23px;}
 .seller-form .regist-btn { display: flex; align-items: center; justify-content: center; width: 198px; height: 54px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 27px; margin: 30px auto 0;}
+
+/* 출석체크 */
+.attendance .attendance-box { position: relative; padding: 712px 35px 40px; background: url(../img/attendance-img.png) no-repeat top center #F1F1F1;}
+.attendance .attendance-box p.day { position: absolute; top: 316px; right: 333px; font-size: 20px; font-weight: 700; line-height: 27px; color: #6435E9;}
+.attendance .attendance-box .btn { position: absolute; top: 400px; left: 251px; display: flex; align-items: center; justify-content: center; width: 323px; height: 76px; font-size: 25px; font-weight: 700; line-height: 34px; color: #FFFFFF; background: #5E5BF9; border-radius: 38px;}
+.attendance .attendance-box .calender-box { width: 100%; background: #FFFFFF; border-radius: 22px; overflow: hidden;}
+.attendance .attendance-box .calender-box .month-box { display: flex; align-items: center; justify-content: center; height: 60px; background: #5E5BF9;}
+.attendance .attendance-box .calender-box .month-box p { font-size: 20px; font-weight: 700; color: #FFFFFF; margin: 0 70px;}
+.attendance .attendance-box .calender-box .calender { width: 100%; padding: 10px 30px 32px;}
+.attendance .attendance-box .calender-box .calender table { width: 100%;}
+.attendance .attendance-box .calender-box .calender table th { height: 53px; font-size: 16px; font-weight: 500; line-height: 23px; color: #333333; vertical-align: middle;}
+.attendance .attendance-box .calender-box .calender table td { height: 100px; padding: 6px 10px; font-size: 13px; line-height: 18px; color: #333333; border: 1px solid #E3E3E3;}
+.attendance .attendance-box .calender-box .calender table td.check { background: url(../img/attendance-check.png) no-repeat center;}
+.attendance .notice { padding: 35px; background: #838383; border-radius: 0 0 12px 12px;}
+.attendance .notice p { font-size: 15px; line-height: 30px; color: #C8C8C8;}
+.attendance .notice p strong { display: block; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; margin-bottom: 4px;}
