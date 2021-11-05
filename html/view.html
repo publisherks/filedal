@@ -198,6 +198,51 @@
         <div class="comment">
             <p class="info">전체 댓글 5</p>
             <form action="">
+                <div class="score-box">
+                    <p>별점을 선택해주세요.</p>
+                    <div class="score">
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 1개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 1.5개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 2개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 2.5개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 3개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 3.5개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 4개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 4.5개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 5개</span></span>
+                        </label>
+                        <label class="score-label">
+                            <input type="radio" name="star" id="">
+                            <span class="score-img"><span class="blind">별 5.5개</span></span>
+                        </label>
+                    </div>
+                </div>
                 <div class="create-box">
                     <textarea name="" id="" placeholder="해당 컨텐츠의 감상평이나 후기를 댓글로 남겨주세요. 사용 포인트의 10%를 돌려드립니다."></textarea>
                     <input type="submit" value="등록">
@@ -207,15 +252,26 @@
                 <colgroup>
                     <col width="17.5%">
                     <col width="*">
+                    <col width="15%">
                 </colgroup>
                 <tbody>
                     <tr>
                         <th><p class="ellipsis">닉네임노출</p></th>
                         <td><p class="ellipsis">잘봤습니다. 감사합니다!^^</p></td>
+                        <td>
+                            <div class="down-score">
+                                <div style="width:95%"></div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th><p class="ellipsis">닉네임노출됩니다</p></th>
                         <td><p class="ellipsis">잘봤습니다. 감사합니다!^^</p></td>
+                        <td>
+                            <div class="down-score">
+                                <div style="width:95%"></div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -369,11 +425,8 @@
                 $("html, body").animate({
                     scrollTop : $("."+loc).offset().top - 120
                 }, 400);
-
-                
             })
         })
-
         
     </script>
 </body>

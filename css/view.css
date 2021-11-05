@@ -71,6 +71,17 @@
 #viewContent .comment table td { height: 50px; font-size: 14px; line-height: 20px; text-align: left; border-bottom: 1px solid #E3E3E3; vertical-align: middle;}
 #viewContent .comment table th { font-weight: 700; color: #404040; padding-left: 20px;}
 #viewContent .comment table td { color: #666666;}
+#viewContent .comment table td .down-score { position: relative; display: inline-block; width: 66px; height: 11px; background: url(../img/star-score.png) no-repeat; background-position: 0 -12px;}
+#viewContent .comment table td .down-score div { position: absolute; top: 0; left: 0; height: 11px; background: url(../img/star-score.png) no-repeat; background-position: 0 0;}
+#viewContent .comment .score-box { display: flex; align-items: center; justify-content: center; height: 60px;}
+#viewContent .comment .score-box p { font-size: 16px; font-weight: 500; line-height: 23px; color: #404040;}
+#viewContent .comment .score-box .blind { position: absolute; overflow: hidden; margin: -1px; padding: 0; width: 1px; height: 1px; border: none; clip: rect(0, 0, 0, 0);}
+#viewContent .comment .score-box .score { display: flex; position: relative; width: 170px; height: 34px; overflow: hidden; background-color: #D0D0D0;}
+#viewContent .comment .score-box .score:after { content: ""; display: block; position: absolute; left: 0; width: 100%; height: 34px; background: url(../img/star_none.png) repeat-x left center; z-index: 1; pointer-events: none;}
+#viewContent .comment .score-box .score .score-label { position: relative; width: 17px; height: 34px; z-index: 1; cursor: pointer;}
+#viewContent .comment .score-box .score .score-label input { position: absolute; width: 0; height: 0; opacity: 0;}
+#viewContent .comment .score-box .score .score-label .score-img { display: block; position: absolute; right: 0; width: 170px; height: 34px; pointer-events: none;}
+#viewContent .comment .score-box .score .score-label input:checked + .score-img { background: #6435E9;}
 
 #viewData { position: fixed; top: 60px; right: 0; width: 260px; background: #F5F5F5;}
 #viewData .btn-group { display: flex; align-items: center; justify-content: space-between; padding: 10px;}
