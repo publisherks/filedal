@@ -98,7 +98,7 @@
 #container .con-fot .latest-box h3.title a { margin-left: 7px;}
 #container .con-fot .latest-box ul li a { display: block; font-size: 16px; line-height: 30px; color: #666666;}
 
-#container .contents-box { padding: 56px 67px 60px 33px; background: #FFFFFF; border-radius: 20px;}
+#container .contents-box { padding: 56px 50px 60px; background: #FFFFFF; border-radius: 20px;}
 #container .contents-box .title-area { display: flex; align-items: center;}
 #container .contents-box .title-area h2 { font-size: 28px; font-weight: 700; line-height: 41px; color: #202020;}
 
@@ -322,6 +322,7 @@
 #findModal .find-complete .btn-box a { display: flex; align-items: center; justify-content: center; width: 133px; height: 54px; font-size: 18px; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 27px;}
 #findModal .find-complete .btn-box a.cancel { background: #A8A8A8; margin-right: 14px;}
 
+/* 본인인증 모달 */
 #authenticationModal { width: 680px; height: 483px;}
 #authenticationModal .modal-con { padding: 60px 35px 0;}
 #authenticationModal .title { font-size: 22px; font-weight: 700; line-height: 32px; color: #202020; text-align: center; margin-bottom: 15px;}
@@ -331,3 +332,40 @@
 #authenticationModal .box > div:nth-child(2) { border-left: 1px solid #E3E3E3; border-right: 1px solid #E3E3E3;}
 #authenticationModal .box > div p { font-size: 16px; line-height: 23px; color: #404040; margin-top: 10px;}
 #authenticationModal .box > div a.btn { display: flex; align-items: center; justify-content: center; width: 127px; height: 38px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; margin-top: 9px; background: #00C2B6; border-radius: 19px;}
+
+/* 결제정보 모달 */
+#paymentModal { width: 685px; padding: 50px 40px;}
+#paymentModal .modal-title { font-size: 22px; font-weight: 700; line-height: 32px; color: #202020; margin-bottom: 30px;}
+#paymentModal .info-box { display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; padding: 35px 30px 30px; background: #F5F5F5; border-radius: 12px 12px 0 0;}
+#paymentModal .info-box .title { font-size: 16px; font-weight: 500; line-height: 23px; color: #202020; margin-bottom: 15px;}
+#paymentModal .info-box .product-box,
+#paymentModal .info-box .config-box { width: 260px;}
+#paymentModal .info-box .product-box .product { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; padding: 0 20px; background: #FFFFFF; border: 1px solid #4422A5; border-radius: 4px;}
+#paymentModal .info-box .product-box .product p { font-size: 16px; font-weight: 500; line-height: 23px; color: #4422A5;}
+#paymentModal .info-box .product-box .product strong { font-size: 16px; font-weight: bold; line-height: 23px; color: #4422A5; margin-left: auto;}
+#paymentModal .info-box .config-box .config { padding: 15px 20px 15px 17px; background: #FFFFFF; border-radius: 4px;}
+#paymentModal .info-box.point .config-box .config li { display: flex; align-items: center; margin-bottom: 12px;}
+#paymentModal .info-box.point .config-box .config li:last-child { margin-bottom: 0;}
+#paymentModal .info-box.point .config-box .config li p { display: flex; align-items: center; font-weight: 500; font-size: 14px; line-height: 20px; padding-left: 3px;}
+#paymentModal .info-box.point .config-box .config li p img { margin-right: 5px;}
+#paymentModal .info-box.point .config-box .config li strong { font-size: 16px; font-weight: 600; line-height: 22px; color: #404040; margin-left: auto;}
+#paymentModal .info-box.point .config-box .config li p.point { color: #FF3D6B;}
+#paymentModal .info-box.point .config-box .config li p.bonus { color: #FAA500;}
+#paymentModal .info-box.point .config-box .config li p.sbonus { color: #6335E8;}
+#paymentModal .info-box.point .config-box .config li p.free { color: #0788FF; padding-left: 0;}
+#paymentModal .info-box.point .config-box .config li p.free img { margin-right: 3px;}
+#paymentModal .info-box.pass .config-box .config li { display: grid; grid-template-columns: 0 1fr; grid-gap: 12px; align-items: start; font-size: 16px; font-weight: 400; line-height: 23px; color: #666666; word-break: keep-all;}
+#paymentModal .info-box.pass .config-box .config li::before { content: attr(data-icon);}
+#paymentModal .payment-price { display: flex; align-items: center; width: 100%; height: 80px; padding: 0 30px; background: #4422A5; border-radius: 0 0 12px 12px;}
+#paymentModal .payment-price p { font-size: 18px; font-weight: 500; line-height: 26px; color: #FFFFFF;}
+#paymentModal .payment-price strong { display: flex; align-items: flex-end; font-size: 35px; font-weight: 700; line-height: 48px; color: #FFFFFF; margin-left: auto;}
+#paymentModal .payment-price strong span { font-size: 18px; font-weight: 500; line-height: 26px; color: #FFFFFF; margin-left: 4px;}
+#paymentModal .pay-method { margin-top: 40px;}
+#paymentModal .pay-method p { font-size: 16px; font-weight: 500; line-height: 23px; color: #4422A5; margin-bottom: 20px;}
+#paymentModal .pay-method ul { display: flex; flex-wrap: wrap;}
+#paymentModal .pay-method ul li { display: flex; align-items: center; justify-content: center; width: 112px; height: 50px; margin-top: 10px; font-size: 14px; font-weight: 500; line-height: 20px; color: #666666; background: #F5F5F5; border: 1px solid #D0D0D0; border-radius: 4px; cursor: pointer;}
+#paymentModal .pay-method ul li:not(:nth-child(5n)) { margin-right: 10px;}
+#paymentModal .pay-method ul li.on { color: #562BD1; border-color: #562BD1;}
+
+
+

@@ -194,3 +194,48 @@
 .request .request-box .search-form .input-box input { width: 100%; height: 100%; font-size: 16px; line-height: 23px; color: #404040; padding: 0 50px 0 20px; border-radius: 4px; border: none; outline: none;}
 .request .request-box .search-form .input-box .sch-btn { position: absolute; right: 15px; width: 30px; height: 100%; background: url(../img/search-wh2.png) no-repeat center; border: none; outline: none;}
 .request .request-box .search-form .request-btn { width: 130px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 4px;}
+
+/* 포인트 충전샵 */
+.shop .tab-menu { margin-bottom: 40px;}
+.shop .tab-menu ul li { width: calc(50% - 1px);}
+.shop .tab-menu ul li a { height: 60px;}
+.shop .banner { width: 100%; height: 200px; border-radius: 12px; overflow: hidden;}
+.shop .point-shop .info { display: flex; align-items: center; justify-content: flex-end; margin: 30px 0;}
+.shop .point-shop .info li { display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 500; line-height: 23px; color: #404040; margin-left: 10px;}
+.shop .point-shop .info li img { margin-left: 5px;}
+.shop .point-shop .shop-box { display: flex; align-items: center; position: relative; height: 178px; margin-left: 73px; margin-bottom: 24px; padding: 14px 0; border: 1px solid #D0D0D0; border-radius: 12px;}
+.shop .point-shop .shop-box .point-circle { display: flex; align-items: center; flex-direction: column; position: absolute; top: 15px; left: -73px; width: 149px; height: 150px; background: url(../img/point-circle.png) no-repeat center; padding-top: 40px; font-size: 16px; font-weight: 500; line-height: 23px; color: #4422A5;}
+.shop .point-shop .shop-box .point-circle strong { font-size: 26px; font-weight: 700; line-height: 1; margin-top: 5px;}
+.shop .point-shop .shop-box .point-circle strong span { font-size: 23px; font-weight: 600;}
+.shop .point-shop .shop-box .point { display: flex; align-items: center; justify-content: center; position: relative; width: 101px; height: 101px; margin-left: 107px; font-size: 20px; font-weight: 700; line-height: 1; color: #FF3D6B; background: rgba(255, 61, 107, 0.2); border-radius: 50%;}
+.shop .point-shop .shop-box .point span { font-size: 16px; font-weight: 600;}
+.shop .point-shop .shop-box .point img { position: absolute; top: -5px; left: -5px;}
+.shop .point-shop .shop-box .payment { margin-left: auto; padding: 20px 30px 0; border-left: 1px dashed #E3E3E3; text-align: center;}
+.shop .point-shop .shop-box .payment p { font-size: 16px; font-weight: 500; line-height: 23px; color: #202020;}
+.shop .point-shop .shop-box .payment strong { font-size: 30px; font-weight: 700; line-height: 36px; color: #202020;}
+.shop .point-shop .shop-box .payment strong span { font-size: 18px; font-weight: 400;}
+.shop .point-shop .shop-box .payment .btn { display: flex; align-items: center; justify-content: center; width: 189px; height: 45px; margin-top: 12px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #562BD1; border-radius: 23px;}
+.shop .point-shop .shop-box .plus-icon { margin: 0 26px;}
+.shop .point-shop .shop-box .benefit p { display: flex; align-items: center; justify-content: center; width: 198px; height: 38px; padding-left: 24px; font-size: 20px; font-weight: 700; line-height: 1; border-radius: 19px;}
+.shop .point-shop .shop-box .benefit p span { font-size: 16px; font-weight: 400;}
+.shop .point-shop .shop-box .benefit p.bonus { color: #FAA500; background: url(../img/B.png) no-repeat 16px center rgba(250, 165, 0, 0.2); margin-bottom: 3px;}
+.shop .point-shop .shop-box .benefit p.sbonus { color: #6335E8; background: url(../img/SB.png) no-repeat 16px center rgba(99, 53, 232, 0.2); margin-bottom: 3px;}
+.shop .point-shop .shop-box .benefit p.free { color: #0788FF; background: url(../img/C.png) no-repeat 14px center rgba(22, 143, 255, 0.2);}
+.shop .shop-notice { padding: 40px 30px; background: #F5F5F5; border-radius: 12px;}
+.shop .shop-notice p { font-size: 16px; font-weight: 500; line-height: 23px; color: #333333; margin-bottom: 4px;}
+.shop .shop-notice ul li { display: grid; grid-template-columns: 0 1fr; grid-gap: 12px; align-items: start; font-size: 15px; font-weight: 400; line-height: 30px; color: #666666; word-break: keep-all;}
+.shop .shop-notice ul li::before { content: attr(data-icon);}
+.shop .pass-shop { display: flex; flex-wrap: wrap; margin-bottom: 50px;}
+.shop .pass-shop .shop-box { display: flex; flex-direction: column; align-items: center; width: 400px; height: 482px; margin-top: 30px; margin-right: 25px; padding-top: 35px; background: #333333; border-radius: 12px;}
+.shop .pass-shop .shop-box:nth-child(2n) { margin-right: 0;}
+.shop .pass-shop .shop-box img.moon { margin-bottom: 24px;}
+.shop .pass-shop .shop-box p.title { font-size: 28px; font-weight: 700; line-height: 41px; color: #FFFFFF;}
+.shop .pass-shop .shop-box .benefits { width: 100%; margin: auto 0; padding: 0 40px;}
+.shop .pass-shop .shop-box .benefits ul { width: 100%; padding: 16px 0; background: #404040; border-radius: 4px;}
+.shop .pass-shop .shop-box .benefits ul li { display: flex; align-items: center; font-size: 16px; font-weight: 500; line-height: 23px; color: #D0D0D0; padding-left: 70px;}
+.shop .pass-shop .shop-box .benefits ul li span { color: #6BFFF5;}
+.shop .pass-shop .shop-box .benefits ul li img { margin-right: 8px;}
+.shop .pass-shop .shop-box .price { display: flex; align-items: baseline; text-align: center; font-size: 20px; font-weight: 500; line-height: 29px; color: #A8A8A8;}
+.shop .pass-shop .shop-box .price strong { font-size: 40px; font-weight: bold; line-height: 54px; color: #FFFFFF; margin-left: 10px;}
+.shop .pass-shop .shop-box .price strong span { font-size: 20px; font-weight: 400;}
+.shop .pass-shop .shop-box .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 62px; margin-top: 25px; font-size: 18px; font-weight: 700; line-height: 26px; color: #FFFFFF; background: #562BD1; border-radius: 0 0 12px 12px;}
