@@ -51,39 +51,82 @@
 .accordion-list .accordion-item.no-data .accordion-btn { cursor: default !important;}
 .accordion-list .accordion-item.no-data .title { width: 100% !important; font-weight: 400 !important;}
 
-.customer #faq .accordion-list .accordion-btn { height: 71px;}
-.customer #faq .accordion-list .accordion-btn p.type { flex: 0 0 135px; text-align: center; font-size: 16px; line-height: 23px; color: #888888;}
-.customer #faq .accordion-list .accordion-btn .title { display: flex; align-items: center; width: calc(100% - 203px); font-weight: 500;}
-.customer #faq .accordion-list .accordion-btn .title i { font-weight: 700; color: #00C2B6; margin-right: 8px;}
-.customer #faq .accordion-list .accordion-btn .accordion-icon { position: relative; flex: 0 0 18px; height: 18px; margin-left: auto; margin-right: 25px;}
-.customer #faq .accordion-list .accordion-btn .accordion-icon .hotizontal,
-.customer #faq .accordion-list .accordion-btn .accordion-icon .vertical { transition: all .25s ease-in-out; transform: rotate(-90deg);}
-.customer #faq .accordion-list .accordion-btn .accordion-icon .hotizontal { position: absolute; top: 50%; left: 50%; margin-left: -9px; margin-top: -1px; width: 18px; height: 2px; background: #D0D0D0;}
-.customer #faq .accordion-list .accordion-btn .accordion-icon .vertical { position: absolute; top: 50%; left: 50%; margin-left: -1px; margin-top: -9px; width: 2px; height: 18px; background: #D0D0D0;}
-.customer #faq .accordion-list .accordion-contents { padding: 30px 60px 45px 135px;}
-.customer #faq .accordion-list .accordion-contents i { font-weight: 700; color: #FF3D6B; margin-right: 9px;}
-.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal,
-.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
-.customer #faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
+.faq .tab-menu ul li,
+.notice .tab-menu ul li,
+.inquiry .tab-menu ul li { width: calc((100% - 6px) / 3);}
+.faq .tab-menu ul li a,
+.notice .tab-menu ul li a,
+.inquiry .tab-menu ul li a { height: 60px;}
+.faq .faq-contents { padding-top: 50px;}
+.notice .notice-contents,
+.inquiry .inquiry-contents { padding-top: 40px;}
+.faq h3.title,
+.notice h3.title,
+.inquiry h3.title { font-size: 20px; font-weight: 700; line-height: 29px; color: #202020;}
+.faq h3.title { text-align: center; margin-bottom: 25px;}
+.notice h3.title { margin-bottom: 20px;}
+.inquiry h3.title { margin-bottom: 10px;}
+.faq .faq-contents .sch-box { position:relative; width: 564px; height: 50px; border: 2px solid #F5F5F5; border-radius: 40px; margin: 0 auto 40px;}
+.faq .faq-contents .sch-box input { width: 100%; height: 100%; font-size: 16px; font-weight: 500; line-height: 23px; color: #333333; padding-left: 30px; background-color: transparent; border: none; outline: none;}
+.faq .faq-contents .sch-box input::placeholder { font-weight: 400; color: #A8A8A8;}
+.faq .faq-contents .sch-box .sch-btn { position: absolute; top: 50%; right: 25px; width: 30px; height: 30px; background: url(../img/search-wh.png) no-repeat center; transform: translateY(-50%); border: none; outline: none;}
+.faq .faq-contents .list-cate { display: flex; align-items: center; margin-bottom: 40px;}
+.faq .faq-contents .list-cate li { display: flex; align-items: center;}
+.faq .faq-contents .list-cate li:not(:last-child):after { content: ""; display: block; width: 6px; height: 6px; background: #E3E3E3; border-radius: 50%; margin: 0 20px;}
+.faq .faq-contents .list-cate li a { position: relative; font-size: 16px; line-height: 23px; color: #666666; padding: 0 5px;}
+.faq .faq-contents .list-cate li a.on { font-weight: 500; color: #333333;}
+.faq .faq-contents .list-cate li a.on:after { content: ""; display: block; position: absolute; top: calc(100% + 6px); left: 0; width: 100%; height: 4px; background: #333333;}
 
-.customer #notice .accordion-list .accordion-btn { height: 60px;}
-.customer #notice .accordion-list .accordion-btn p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888; margin-right: 5px;}
-.customer #notice .accordion-list .accordion-btn p.title { width: calc(100% - 215px);}
-.customer #notice .accordion-list .accordion-item.noti .title { font-weight: 500;}
-.customer #notice .accordion-list .accordion-btn p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto;}
-.customer #notice .accordion-list .accordion-contents { padding: 30px 60px 45px 80px;}
+.faq .accordion-list .accordion-btn { height: 71px;}
+.faq .accordion-list .accordion-btn p.type { flex: 0 0 135px; text-align: center; font-size: 16px; line-height: 23px; color: #888888;}
+.faq .accordion-list .accordion-btn .title { display: flex; align-items: center; width: calc(100% - 203px); font-weight: 500;}
+.faq .accordion-list .accordion-btn .title i { font-weight: 700; color: #00C2B6; margin-right: 8px;}
+.faq .accordion-list .accordion-btn .accordion-icon { position: relative; flex: 0 0 18px; height: 18px; margin-left: auto; margin-right: 25px;}
+.faq .accordion-list .accordion-btn .accordion-icon .hotizontal,
+.faq .accordion-list .accordion-btn .accordion-icon .vertical { transition: all .25s ease-in-out; transform: rotate(-90deg);}
+.faq .accordion-list .accordion-btn .accordion-icon .hotizontal { position: absolute; top: 50%; left: 50%; margin-left: -9px; margin-top: -1px; width: 18px; height: 2px; background: #D0D0D0;}
+.faq .accordion-list .accordion-btn .accordion-icon .vertical { position: absolute; top: 50%; left: 50%; margin-left: -1px; margin-top: -9px; width: 2px; height: 18px; background: #D0D0D0;}
+.faq .accordion-list .accordion-contents { padding: 30px 60px 45px 135px;}
+.faq .accordion-list .accordion-contents i { font-weight: 700; color: #FF3D6B; margin-right: 9px;}
+.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal,
+.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
+.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
 
-.customer #inquiry .info-text { font-size: 16px; line-height: 23px; color: #666666; margin-bottom: 30px;}
-.customer #inquiry .accordion-list .th { display: flex; align-items: center; height: 50px; padding-right: 20px;}
-.customer #inquiry .accordion-list .th p { font-size: 16px; font-weight: 500; line-height: 23px; color: #666666; text-align: center;}
-.customer #inquiry .accordion-list .accordion-btn { height: 60px; padding-right: 20px;}
-.customer #inquiry .accordion-list p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888;}
-.customer #inquiry .accordion-list p.type { flex: 0 0 150px; text-align: center; font-size: 14px; line-height: 19px; color: #666666;}
-.customer #inquiry .accordion-list .title { width: calc(100% - 417px);}
-.customer #inquiry .accordion-list p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto}
-.customer #inquiry .accordion-list .state { flex: 0 0 72px;}
-.customer #inquiry .accordion-list .state span { display: flex; align-items: center; justify-content: center; width: 72px; height: 32px; font-size: 14px; line-height: 20px; color: #666666; border-radius: 4px; background: #E3E3E3;}
-.customer #inquiry .accordion-list .state.cmp span { color: #FFFFFF; background: #00C2B6;}
+.notice .accordion-list .accordion-btn { height: 60px;}
+.notice .accordion-list .accordion-btn p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888; margin-right: 5px;}
+.notice .accordion-list .accordion-btn p.title { width: calc(100% - 215px);}
+.notice .accordion-list .accordion-item.noti .title { font-weight: 500;}
+.notice .accordion-list .accordion-btn p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto;}
+.notice .accordion-list .accordion-contents { padding: 30px 60px 45px 80px;}
+
+.inquiry .info-text { font-size: 16px; line-height: 23px; color: #666666; margin-bottom: 30px;}
+.inquiry .inquiry-list { border-top: 1px solid #D0D0D0; margin-bottom: 15px;}
+.inquiry .inquiry-list .inquiry-item { border-bottom: 1px solid #D0D0D0;}
+.inquiry .inquiry-list .inquiry-contents { display: flex; align-items: flex-start; background: #F5F5F5; border-top: 1px solid #D0D0D0;}
+.inquiry .inquiry-list .inquiry-contents p { font-size: 16px; line-height: 24px; color: #666666;}
+.inquiry .inquiry-list .inquiry-btn { display: flex; align-items: center; cursor: pointer;}
+.inquiry .inquiry-list .inquiry-btn .title { display: flex; align-items: center; font-size: 16px; color: #333333;}
+.inquiry .inquiry-list .inquiry-btn .title p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.inquiry .inquiry-list .inquiry-contents { display: none;}
+.inquiry .inquiry-list .inquiry-item.no-data .inquiry-btn { cursor: default !important;}
+.inquiry .inquiry-list .inquiry-item.no-data .title { width: 100% !important; font-weight: 400 !important;}
+.inquiry .inquiry-list .th { display: flex; align-items: center; height: 50px; padding-right: 20px;}
+.inquiry .inquiry-list .th p { font-size: 16px; font-weight: 500; line-height: 23px; color: #666666; text-align: center;}
+.inquiry .inquiry-list .inquiry-btn { height: 60px; padding-right: 20px;}
+.inquiry .inquiry-list p.no { flex: 0 0 75px; text-align: center; font-size: 14px; line-height: 19px; color: #888888;}
+.inquiry .inquiry-list p.type { flex: 0 0 150px; text-align: center; font-size: 14px; line-height: 19px; color: #666666;}
+.inquiry .inquiry-list .title { width: calc(100% - 417px);}
+.inquiry .inquiry-list p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto}
+.inquiry .inquiry-list .state { flex: 0 0 72px;}
+.inquiry .inquiry-list .state span { display: flex; align-items: center; justify-content: center; width: 72px; height: 32px; font-size: 14px; line-height: 20px; color: #666666; border-radius: 4px; background: #E3E3E3;}
+.inquiry .inquiry-list .state.cmp span { color: #FFFFFF; background: #00C2B6;}
+.inquiry .request-btn { display: flex; align-items: center; justify-content: center; width: 130px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; border: none; background: #202020; border-radius: 4px; outline: none;}
+
+.inquiry .inquiry-type { display: flex; margin-bottom: 20px;}
+.inquiry .inquiry-type button { font-size: 16px; line-height: 23px; color: #404040; margin-right: 10px; padding: 11px 25px; background: #FFFFFF; border: 1px solid #D0D0D0; border-radius: 23px;}
+.inquiry .inquiry-type button.on { color: #FFFFFF; border-color: #404040; background-color: #404040;}
+.inquiry .inquiry-type button:last-child { margin-right: 0;}
+
 
 /* 마이페이지 */
 .mypage .my-info-box { display: flex; flex-wrap: wrap;  padding: 40px 40px 35px; border: 1px solid #E3E3E3; margin-bottom: 50px;}
@@ -193,7 +236,7 @@
 .request .request-box .search-form .input-box { position: relative; width: 300px; height: 50px; border: 1px solid #E3E3E3; border-radius: 4px;}
 .request .request-box .search-form .input-box input { width: 100%; height: 100%; font-size: 16px; line-height: 23px; color: #404040; padding: 0 50px 0 20px; border-radius: 4px; border: none; outline: none;}
 .request .request-box .search-form .input-box .sch-btn { position: absolute; right: 15px; width: 30px; height: 100%; background: url(../img/search-wh2.png) no-repeat center; border: none; outline: none;}
-.request .request-box .search-form .request-btn { width: 130px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 4px;}
+.request .request-box .search-form .request-btn { width: 130px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; border: none; background: #202020; border-radius: 4px; outline: none;}
 
 /* 포인트 충전샵 */
 .shop .tab-menu { margin-bottom: 40px;}
