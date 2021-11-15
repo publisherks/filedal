@@ -186,9 +186,45 @@
 .inquiry .answer-box .alarm-box .email .input-box span { font-size: 16px; color: #202020; margin: 0 5px;}
 .inquiry .btn-box { display: flex; align-items: center; justify-content: center; margin-top: 40px;}
 .inquiry .btn-box .cancel-btn,
-.inquiry .btn-box .regist-btn { display: flex; align-items: center; justify-content: center; width: 163px; height: 50px; font-size: 16px; font-weight: 400; line-height: 23px; text-align: center; border-radius: 25px;}
+.inquiry .btn-box .regist-btn { display: flex; align-items: center; justify-content: center; width: 163px; height: 50px; font-size: 16px; font-weight: 400; line-height: 23px; text-align: center; border: none; border-radius: 25px; outline: none;}
 .inquiry .btn-box .cancel-btn { color: #888888; background: #E3E3E3;}
 .inquiry .btn-box .regist-btn { color: #FFFFFF; background: #202020;}
+.inquiry .view-box .top-box { display: flex; align-items: center; height: 102px; padding: 0 20px; border-top: 1px solid #202020; border-bottom: 1px solid #D0D0D0;}
+.inquiry .view-box .top-box .subject-box { flex: 1 0 auto;}
+.inquiry .view-box .top-box .subject-box .subject { font-size: 18px; font-weight: 500; line-height: 26px; color: #333333; margin-bottom: 6px;}
+.inquiry .view-box .top-box .subject-box .etc { display: flex; align-items: center;}
+.inquiry .view-box .top-box .subject-box .etc .type { font-size: 14px; line-height: 20px; color: #666666;}
+.inquiry .view-box .top-box .subject-box .etc .line { display: block; width: 1px; height: 15px; background: #E3E3E3;}
+.inquiry .view-box .top-box .subject-box .etc .date { font-size: 14px; line-height: 19px; color: #888888;}
+.inquiry .view-box .top-box .state { flex: 0 0 72px;}
+.inquiry .view-box .top-box .state span { display: flex; align-items: center; justify-content: center; width: 72px; height: 32px; font-size: 14px; line-height: 20px; color: #666666; border-radius: 4px; background: #E3E3E3;}
+.inquiry .view-box .top-box .state.cmp span { color: #FFFFFF; background: #00C2B6;}
+.inquiry .view-box .con-box { margin-bottom: 40px; padding: 30px 20px; border-bottom: 1px solid #D0D0D0;}
+.inquiry .view-box .con-box .text-box { min-height: 268px; font-size: 16px; line-height: 26px; color: #404040; word-break: keep-all;}
+.inquiry .view-box .con-box .btn { display: flex; align-items: center; justify-content: center; margin: 0 auto; width: 201px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #562BD1; border-radius: 25px;}
+.inquiry .view-box .list-btn { display: flex; align-items: center; justify-content: center; margin: 0 auto 40px; width: 163px; height: 50px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; background: #202020; border-radius: 25px;}
+.inquiry .view-box .comment { }
+.inquiry .view-box .comment .info { font-size: 14px; font-weight: 500; line-height: 20px; color: #562BD1; margin-left: 10px;}
+.inquiry .view-box .comment .create-box { display: flex; width: 100%; height: 87px; margin: 18px 0 15px; border: 1px solid #E3E3E3; border-radius: 12px; overflow: hidden;}
+.inquiry .view-box .comment .create-box textarea { width: 88%; height: 100%; font-size: 14px; font-weight: 400; color: #333333; line-height: 23px; padding: 15px 20px; border: none; outline: none; resize: none;}
+.inquiry .view-box .comment .create-box textarea::placeholder { font-size: 14px; color: #A8A8A8;}
+.inquiry .view-box .comment .create-box input { width: 12%; height: 100%; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; text-align: center; background: #00C2B6; border: none; outline: none; cursor: pointer;}
+.inquiry .view-box .comment table { width: 100%; table-layout: fixed;}
+.inquiry .view-box .comment table th,
+.inquiry .view-box .comment table td { height: 50px; font-size: 14px; line-height: 20px; text-align: left; border-bottom: 1px solid #E3E3E3; vertical-align: middle;}
+.inquiry .view-box .comment table th { font-weight: 700; color: #404040; padding-left: 20px;}
+.inquiry .view-box .comment table td { color: #666666;}
+.inquiry .view-box .score-box { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 50px; padding: 30px 0; background: #F5F5F5; border: 1px solid #E3E3E3; border-radius: 12px;}
+.inquiry .view-box .score-box p { font-size: 16px; line-height: 26px; color: #666666;}
+.inquiry .view-box .score-box p strong { display: block; margin-bottom: 2px; font-size: 18px; font-weight: 500; color: #202020;}
+.inquiry .view-box .score-box p span { color: #562BD1;}
+.inquiry .view-box .score-box .blind { position: absolute; overflow: hidden; margin: -1px; padding: 0; width: 1px; height: 1px; border: none; clip: rect(0, 0, 0, 0);}
+.inquiry .view-box .score-box .score { display: flex; position: relative; margin-top: 18px; width: 170px; height: 34px; overflow: hidden; background-color: #D0D0D0;}
+.inquiry .view-box .score-box .score:after { content: ""; display: block; position: absolute; left: 0; width: 100%; height: 34px; background: url(../img/star_none2.png) repeat-x left center; z-index: 1; pointer-events: none;}
+.inquiry .view-box .score-box .score .score-label { position: relative; width: 17px; height: 34px; z-index: 1; cursor: pointer;}
+.inquiry .view-box .score-box .score .score-label input { position: absolute; width: 0; height: 0; opacity: 0;}
+.inquiry .view-box .score-box .score .score-label .score-img { display: block; position: absolute; right: 0; width: 170px; height: 34px; pointer-events: none;}
+.inquiry .view-box .score-box .score .score-label input:checked + .score-img { background: #6435E9;}
 
 
 
