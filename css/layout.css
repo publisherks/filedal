@@ -368,4 +368,11 @@
 #paymentModal .pay-method ul li.on { color: #562BD1; border-color: #562BD1;}
 
 
-
+/* 개인정보 수집 및 이용 동의 모달 */
+#argeeModal { width: 520px; padding: 70px 50px 50px;}
+#argeeModal .modal-title { font-size: 20px; font-weight: 700; line-height: 29px; color: #333333; text-align: center; margin-bottom: 35px;}
+#argeeModal .modal-title span { color: #00C2B6;}
+#argeeModal p { font-size: 16px; font-weight: 500; line-height: 23px; color: #666666; word-break: keep-all;}
+#argeeModal p strong { color: #333333;}
+#argeeModal p span { font-weight: 400; color: #A8A8A8;}
+#argeeModal .confirm-btn { display: flex; align-items: center; justify-content: center; width: 163px; height: 54px; margin: 35px auto 0; font-size: 18px; font-weight: 700; line-height: 26px; color: #FFFFFF; background: #202020; border-radius: 27px;}

@@ -371,9 +371,263 @@
                                     <button type="button">회원정보/이벤트</button>
                                 </div>
                                 <div class="inquiry-check">
-                                    <div class="check-item">
-                                        <p class="title blue">사이트 이용</p>
+                                    <div class="radio-item">
+                                        <p class="title">사이트 이용</p>
+                                        <div class="radio">
+                                            <input type="radio" name="siteuse" id="siteuse1" value="1">
+                                            <label for="siteuse1">접속 오류</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="siteuse" id="siteuse2" value="2">
+                                            <label for="siteuse2">검색 오류</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="siteuse" id="siteuse3" value="3">
+                                            <label for="siteuse3">기타</label>
+                                        </div>
                                     </div>
+                                    <div class="radio-item">
+                                        <p class="title">설치 및 다운로드</p>
+                                        <div class="radio">
+                                            <input type="radio" name="install" id="install1" value="1">
+                                            <label for="install1">설치 오류</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="install" id="install2" value="2">
+                                            <label for="install2">다운로드 오류</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="install" id="install3" value="3">
+                                            <label for="install3">속도 문의</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="install" id="install4" value="4">
+                                            <label for="install4">원격지원 요청</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="install" id="install5" value="5">
+                                            <label for="install5">기타</label>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="check-item mb-25">
+                                        <div class="title-box">
+                                            <p>사용중인 운영체제 (OS)</p>
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="os" id="os">
+                                                <label for="os">선택안함</label>
+                                            </div>
+                                        </div>
+                                        <div class="radio-item">
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os1" value="1">
+                                                <label for="os1">윈도우10</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os2" value="2">
+                                                <label for="os2">윈도우8(8.1)</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os3" value="3">
+                                                <label for="os3">윈도우7</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os4" value="4">
+                                                <label for="os4">MAC</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os5" value="5">
+                                                <label for="os5">리눅스</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="os" id="os6" value="6">
+                                                <label for="os6">기타</label>
+                                                <input type="text" placeholder="OS를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <div class="title-box">
+                                            <p>사용중인 브라우저</p>
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="browser" id="browser">
+                                                <label for="browser">선택안함</label>
+                                            </div>
+                                        </div>
+                                        <div class="radio-item">
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser1" value="1" disabled>
+                                                <label for="browser1">크롬</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser2" value="2" disabled>
+                                                <label for="browser2">익스플로러</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser3" value="3" disabled>
+                                                <label for="browser3">엣지</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser4" value="4" disabled>
+                                                <label for="browser4">사파리</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser5" value="5" disabled>
+                                                <label for="browser5">파이어폭스</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="browser" id="browser6" value="6" disabled>
+                                                <label for="browser6">기타</label>
+                                                <input type="text" placeholder="브라우저를 입력해주세요." disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="write-box">
+                                    <input type="text" value="" placeholder="제목을 입력하세요." class="mb-15">
+                                    <div class="write mb-20">
+                                        <textarea name="" id=""></textarea>
+                                    </div>
+                                    <div class="upload">
+                                        <div class="img-box">
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../img/ex-img.png" alt="">
+                                                <a href="#n" class="del-btn">
+                                                    <img src="../img/x-circle.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="btn-box">
+                                            <p>최대 <span>20</span>개 / 개당 <span>5MB</span> 이하</p>
+                                            <div class="file-box">
+                                                <input type="file" id="imgUpload">
+                                                <label for="imgUpload">이미지 업로드</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer-box">
+                                    <div class="title-box">
+                                        <p>답변이 등록되면 알려드립니다!</p>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="argee" id="argee">
+                                            <label for="argee"></label>
+                                            <a href="#n" rel="modal:open" data-modal="#argeeModal">개인정보 수집 및 이용 동의</a>
+                                        </div>
+                                    </div>
+                                    <div class="alarm-box">
+                                        <div class="phone">
+                                            <div class="checkbox tit">
+                                                <input type="checkbox" name="phone" id="phone">
+                                                <label for="phone">휴대폰으로 알림 받기</label>
+                                            </div>
+                                            <ul class="guide-box">
+                                                <li data-icon="·">답변 등록 시 인증하신 번호로 카톡 또는 문자로 발송해 드립니다.</li>
+                                                <li data-icon="·">본인 인증된 번호가 있을 때만 발송 가능합니다.</li>
+                                            </ul>
+                                            <div class="input-box">
+                                                <input type="text">
+                                                <span>휴대폰 번호:</span>
+                                            </div>
+                                        </div>
+                                        <div class="email">
+                                            <div class="checkbox tit">
+                                                <input type="checkbox" name="email" id="email">
+                                                <label for="email">이메일으로 알림 받기</label>
+                                            </div>
+                                            <ul class="guide-box">
+                                                <li data-icon="·">답변 등록 시 이메일로 발송해 드립니다.</li>
+                                            </ul>
+                                            <div class="input-box">
+                                                <input type="text">
+                                                <span>@</span>
+                                                <select name="" id="">
+                                                    <option value="naver.com">naver.com</option>
+                                                </select>
+                                                <!-- <input type="text"> -->
+                                            </div>
+                                            <div class="checkbox mt-10 ml-auto">
+                                                <input type="checkbox" name="direct" id="direct">
+                                                <label for="direct">직접 입력</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="./inquiry.html" class="cancel-btn mr-15">취소</a>
+                                    <button type="submit" class="regist-btn">등록</button>
                                 </div>
                             </form>
                         </article>
@@ -435,6 +689,23 @@
                 <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
             </div>
         </footer>
+    </div>
+    <div id="argeeModal" class="modal">
+        <h3 class="modal-title">개인정보 수집 및 이용 동의 <span>[선택]</span></h3>
+        <p>
+            <strong>[개인정보 수집 및 이용 동의]</strong><br>
+            파일달은 다음과 같이 개인정보를 수집하고 있습니다.<br>
+            <br>
+            수집 및 이용 목적 : 답변 알림<br>
+            항목 : 휴대폰번호 & 이메일<br>
+            보유 및 이용기간 : <strong>수집일로부터 3년</strong><br>
+            <strong>(법령에 특별한 규정이 있을 경우 관련 법령에 따라 보관)</strong><br>
+            <br>
+            동의를 거부할 경우 답변을 받을 수 없습니다.<br>
+            <br>
+            <span>※ 그 외의 사항 및 자동 수집 정보와 관련된 사항은 개인정보처리방침을 따릅니다.</span>
+        </p>
+        <a href="#n" rel="modal:close" class="confirm-btn">확인</a>
     </div>
 </body>
 </html>

@@ -24,14 +24,14 @@
 #viewContent .view-info .file-list ul li div.size { width: 12%;}
 #viewContent .btn-wrap { position: relative; width: 100%; padding: 25px 10px; background: #FFFFFF; z-index: 9;}
 #viewContent .btn-wrap .top-btn { position: absolute; top: -46px; right: 11px; display: none; align-items: center; justify-content: center; width: 86px; height: 36px; font-size: 14px; line-height: 20px; color: #FFFFFF; background: #333333; border-radius: 30px;}
-#viewContent .btn-wrap .btn-group { display: flex; align-items: center; justify-content: center;}
+#viewContent .btn-wrap .btn-group { position: relative; display: flex; align-items: center; height: 46px;}
 #viewContent .btn-wrap .btn-group a { display: flex; align-items: center; justify-content: center;}
 #viewContent .btn-wrap .btn-group .prev,
 #viewContent .btn-wrap .btn-group .next { width: 72px; height: 36px; font-size: 14px; line-height: 20px; color: #404040; border: 1px solid #D0D0D0; border-radius: 30px;}
 #viewContent .btn-wrap .btn-group .down,
-#viewContent .btn-wrap .btn-group .coupon { height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; border-radius: 100px;}
-#viewContent .btn-wrap .btn-group .down { width: 205px; background: #00C2B6;}
-#viewContent .btn-wrap .btn-group .coupon { width: 154px; background: #A8A8A8;}
+#viewContent .btn-wrap .btn-group .coupon { position: absolute; height: 46px; font-size: 16px; font-weight: 700; line-height: 23px; color: #FFFFFF; border-radius: 100px;}
+#viewContent .btn-wrap .btn-group .down { left: 195px; width: 205px; background: #00C2B6;}
+#viewContent .btn-wrap .btn-group .coupon { right: 195px; width: 154px; background: #A8A8A8;}
 #viewContent .btn-wrap.fix { position: fixed; bottom: 0; width: calc(100% - 260px); padding: 17px 10px; border-top: 1px solid #E3E3E3;}
 #viewContent .btn-wrap.fix .top-btn { display: flex;}
 #viewContent .btn-wrap.fix + .title-tab { margin-top: 96px;}
